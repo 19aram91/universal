@@ -3,8 +3,12 @@ session_start();
 require('libs/Smarty.class.php');
 require('controllers/user.php');
 
+define("root", 'http://'.$_SERVER['HTTP_HOST']);
+
 $smarty = new Smarty();
 $select = new Select();
+
+$smarty->assign('root', root);
 
 $date = date('d-m-y',strtotime("-1 days"));
 $smarty->assign('date', $date);

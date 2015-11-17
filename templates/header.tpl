@@ -7,10 +7,10 @@
     <meta name="keywords" content="сонник, сон, толкование снов, сновидение, sonnik, видеть во сне">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{#root#}/img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{root}/img/favicon.ico" type="image/x-icon"/>
     <!-- Bootstrap -->
-    <link href="{#root#}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{#root#}/css/style.css" rel="stylesheet">
+    <link href="{root}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{root}/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +25,7 @@
 <div class="container">
     <div class="row header">
         <div class="col-md-6 col-sm-6 col-xs-12 logo">
-            <div class="logo-head"><a href="{#root#}"> СОННИК </a></div>
+            <div class="logo-head"><a href="{root}"> СОННИК </a></div>
             <div class="logo-slog">Толкователь снов</div>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -83,7 +83,7 @@
                     <div class="collapse navbar-collapse" id="resp-nav">
                         <ul class="nav navbar-nav">
                             {foreach $top_dream_list as $tdl}
-                                <li><a href="{#root#}/dream/{$tdl.ID}"> {$tdl.header} </a></li>
+                                <li><a href="{root}/dream/{$tdl.ID}"> {$tdl.header} </a></li>
                             {/foreach}
                         </ul>
                     </div>
@@ -95,14 +95,14 @@
                     </div>
                     <ul class="nav navbar-nav">
                         {foreach $info_list as $il}
-                            <li><a href="{#root#}/info/{$il.ID}"> {$il.header} </a></li>
+                            <li><a href="{root}/info/{$il.ID}"> {$il.header} </a></li>
                         {/foreach}
                     </ul>
                 </nav>
                 <hr />
                 <nav class="navbar navbar-default">
                     <ul class="nav navbar-nav">
-                            <li><a href="{#root#}/horoscope/1"> Ежедневный гороскоп </a></li>
+                            <li><a href="{root}/horoscope/1"> Ежедневный гороскоп </a></li>
                     </ul>
                 </nav>
             </div>
