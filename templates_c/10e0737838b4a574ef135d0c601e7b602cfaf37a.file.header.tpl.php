@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2015-05-03 00:23:43
+<?php /* Smarty version Smarty-3.1.15, created on 2015-11-17 20:43:24
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:520355257103baf151-96184993%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1430605421,
+      1 => 1447778584,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_55257103befaf2_08994722',
   'variables' => 
   array (
+    'root' => 0,
     'top_dream_list' => 0,
     'tdl' => 0,
     'info_list' => 0,
@@ -35,12 +36,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <meta name="keywords" content="сонник, сон, толкование снов, сновидение, sonnik, видеть во сне">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+    <link rel="shortcut icon" href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /img/favicon.ico" type="image/x-icon"/>
     <!-- Bootstrap -->
-    <link href="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+    <link href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+    <link href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -56,7 +57,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="container">
     <div class="row header">
         <div class="col-md-6 col-sm-6 col-xs-12 logo">
-            <div class="logo-head"><a href="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+            <div class="logo-head"><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 "> СОННИК </a></div>
             <div class="logo-slog">Толкователь снов</div>
         </div>
@@ -119,7 +120,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 foreach ($_from as $_smarty_tpl->tpl_vars['tdl']->key => $_smarty_tpl->tpl_vars['tdl']->value) {
 $_smarty_tpl->tpl_vars['tdl']->_loop = true;
 ?>
-                                <li><a href="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /dream/<?php echo $_smarty_tpl->tpl_vars['tdl']->value['ID'];?>
 "> <?php echo $_smarty_tpl->tpl_vars['tdl']->value['header'];?>
  </a></li>
@@ -138,7 +139,7 @@ $_smarty_tpl->tpl_vars['tdl']->_loop = true;
 foreach ($_from as $_smarty_tpl->tpl_vars['il']->key => $_smarty_tpl->tpl_vars['il']->value) {
 $_smarty_tpl->tpl_vars['il']->_loop = true;
 ?>
-                            <li><a href="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+                            <li><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /info/<?php echo $_smarty_tpl->tpl_vars['il']->value['ID'];?>
 "> <?php echo $_smarty_tpl->tpl_vars['il']->value['header'];?>
  </a></li>
@@ -148,7 +149,7 @@ $_smarty_tpl->tpl_vars['il']->_loop = true;
                 <hr />
                 <nav class="navbar navbar-default">
                     <ul class="nav navbar-nav">
-                            <li><a href="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+                            <li><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /horoscope/1"> Ежедневный гороскоп </a></li>
                     </ul>
                 </nav>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2015-05-02 22:52:02
+<?php /* Smarty version Smarty-3.1.15, created on 2015-11-17 20:44:50
          compiled from ".\templates\dream.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:709355257148eceb71-54148796%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '36bcd7ac78a222ac089610048625db2e6fc876a9' => 
     array (
       0 => '.\\templates\\dream.tpl',
-      1 => 1430599920,
+      1 => 1447778682,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'dream_text' => 0,
     'dt' => 0,
+    'root' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -32,7 +33,7 @@ $_smarty_tpl->tpl_vars['dt']->_loop = true;
 ?>
         <div class="dream_header"><h1><?php echo $_smarty_tpl->tpl_vars['dt']->value['header'];?>
 </h1></div>
-        <div class="dream_img"><img class="img-responsive" width="300" src="<?php echo $_smarty_tpl->getConfigVariable('root');?>
+        <div class="dream_img"><img class="img-responsive" width="300" src="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /img/dreambook/<?php echo $_smarty_tpl->tpl_vars['dt']->value['img'];?>
 "></div>
         <div class="dream_text"><h2><?php echo $_smarty_tpl->tpl_vars['dt']->value['description'];?>

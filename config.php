@@ -3,9 +3,9 @@
 class Connect
 {
     private $host = '127.0.0.1';
-    private $dbname = 'dreambook';
+    private $dbname = 'universal';
     private $user = 'root';
-    private $pass = '';
+    private $pass = 'root';
     private $DBH;
 
     function __construct()

@@ -3,12 +3,13 @@ session_start();
 require('libs/Smarty.class.php');
 require('controllers/user.php');
 
-define("root", 'http://'.$_SERVER['HTTP_HOST']);
+date_default_timezone_set('Etc/GMT-4');
+$root = 'http://'.$_SERVER['HTTP_HOST'];
 
 $smarty = new Smarty();
 $select = new Select();
 
-$smarty->assign('root', root);
+$smarty->assign('root', $root);
 
 $date = date('d-m-y',strtotime("-1 days"));
 $smarty->assign('date', $date);
