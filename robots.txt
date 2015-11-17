@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /cache/
+Disallow: /cadmin/
+Disallow: /font-awesome/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /libs/
+Disallow: /plugins/
+Disallow: /img/
+Sitemap: http://www.my-dreambook.ru/sitemap.xml
