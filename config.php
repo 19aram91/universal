@@ -5,7 +5,7 @@ class Connect
     private $host = '127.0.0.1';
     private $dbname = 'universal';
     private $user = 'root';
-    private $pass = 'root';
+    private $pass = '';
     private $DBH;
 
     function __construct()
