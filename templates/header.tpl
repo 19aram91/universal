@@ -25,8 +25,9 @@
 <div class="container">
     <div class="row header">
         <div class="col-md-6 col-sm-6 col-xs-12 logo">
-            <div class="logo-head"><a href="{$root}"> СОННИК </a></div>
-            <div class="logo-slog">Толкователь снов</div>
+            {$slogan_bool = ($conf[0].slogan_show == 0) ? false : true}
+            <div class="logo-head"><a href="{$root}"> {$conf[0].site_name} </a></div>
+            {if $slogan_bool} <div class="logo-slog">{$conf[0].slogan_name}</div> {/if}
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="searchbox">

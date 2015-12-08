@@ -4,7 +4,7 @@
             По вашему запросу ничего не найдено
         {/if}
         {foreach $results as $r}
-            <li><a href="{root}/dream/{$r.ID}">{$r.header}</a></li>
+            <li><a href="{$root}/dream/{$r.ID}">{$r.header}</a></li>
         {/foreach}
     </ul>
 </div>

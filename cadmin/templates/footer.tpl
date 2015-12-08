@@ -9,7 +9,9 @@
 <script src="../js/bootstrap.min.js"></script>
 
 <script src="../plugins/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="../js/admin_functions.js"></script>
+
+<script src="../js/plugins/colorPicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="../js/admin_functions.js"></script>
 
 <!-- Morris Charts JavaScript -->
 <script src="../js/plugins/morris/raphael.min.js"></script>
@@ -18,7 +20,9 @@
 
 {literal}
     <script type="text/javascript">
-
+        $(function(){
+            $('.demo2').colorpicker();
+        });
     </script>
 {/literal}
 

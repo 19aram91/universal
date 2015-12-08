@@ -14,6 +14,9 @@ $smarty->assign('root', $root);
 $date = date('d-m-y',strtotime("-1 days"));
 $smarty->assign('date', $date);
 
+$conf = $select->getConfigs();
+$smarty->assign('conf', $conf);
+
 $info_list = $select->getInfo();
 $smarty->assign('info_list', $info_list);
 

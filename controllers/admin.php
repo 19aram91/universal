@@ -97,6 +97,18 @@ class Select extends Connect{
         }
     }
 
+    function getConfigs(){
+        $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
+        if($page != 'configs'){
+            return;
+        }
+
+        $DBH = Connect::getDBH();
+        $STH = $DBH->prepare("SELECT * FROM configs");
+        $STH->execute()or die(print_r($STH->errorInfo(), true));
+        $result = $STH->fetchAll();
+        return $result;
+    }
 
     function getDreams(){
         $page = (!isset($_GET['page'])) ? "dreambook" : $_GET['page'];
@@ -267,10 +279,25 @@ class Delete extends Connect{
         }
     }
 
-
 }
 
 class Update extends Connect{
+
+    function editConfig(){
+        $action = (!isset($_POST['action'])) ? "" : $_POST['action'];
+        if($action == "edit_config")
+        {
+            $show = isset($_POST['slogan_show']) ? 1 : 0;
+            $name = $_POST['site_name'];
+            $slogan = $_POST['slogan_name'];
+
+            $data = array($name, $slogan, $show);
+            $DBH = Connect::getDBH();
+            $STH = $DBH->prepare("UPDATE configs SET site_name=?, slogan_name=?, slogan_show=?");
+            $STH->execute($data) or die(print_r($STH->errorInfo(), true));
+            header('location:index.php?page=configs');
+        }
+    }
 
     function editDream(){
         $action = (!isset($_POST['action'])) ? "" : $_POST['action'];

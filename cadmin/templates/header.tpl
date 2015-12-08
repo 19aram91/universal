@@ -10,6 +10,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../js/plugins/colorPicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../css/sb-admin.css" rel="stylesheet">
@@ -43,7 +44,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">{#dreambook#}</a>
+            <a class="navbar-brand" href="index.php">Admin Page</a>
         </div>
         <!-- Top Menu Items -->
         <ul class="nav navbar-right top-nav">
@@ -67,6 +68,7 @@
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
+                <li {if $page=="configs"}class="active" {/if}><a href="?page=configs"><i class="fa fa-fw fa-star"></i> {#conf#}</a></li>
                 <li {if $page=="dreambook"}class="active" {/if}><a href="?page=dreambook"><i class="fa fa-fw fa-star"></i> {#dreams#}</a></li>
                 <li {if $page=="info"}class="active" {/if}><a href="?page=info"><i class="fa fa-fw fa-info"></i> {#information#}</a></li>
                 <li {if $page=="main"}class="active" {/if}><a href="?page=main"><i class="fa fa-fw fa-desktop"></i> {#main#}</a></li>

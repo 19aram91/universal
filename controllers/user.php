@@ -4,6 +4,14 @@ require_once('config.php');
 class Select extends Connect
 {
 
+    function getConfigs(){
+        $DBH = Connect::getDBH();
+        $STH = $DBH->prepare("SELECT * FROM configs");
+        $STH->execute()or die(print_r($STH->errorInfo(), true));
+        $result = $STH->fetchAll();
+        return $result;
+    }
+
     function getTopDreams()
     {
         $DBH = Connect::getDBH();
