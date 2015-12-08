@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="425fca7d-451e-4851-b363-78218e96b8eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/img/bootstrap-colorpicker/alpha-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/img/bootstrap-colorpicker/alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/img/bootstrap-colorpicker/hue-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/img/bootstrap-colorpicker/hue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/img/bootstrap-colorpicker/saturation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/css/bootstrap-colorpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/js/bootstrap-colorpicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/css/bootstrap-colorpicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins/colorPicker/js/bootstrap-colorpicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cadmin/templates/configs.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/admin.php" afterPath="$PROJECT_DIR$/controllers/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates/footer.tpl" afterPath="$PROJECT_DIR$/cadmin/templates/footer.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.tpl" afterPath="$PROJECT_DIR$/templates/footer.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates/header.tpl" afterPath="$PROJECT_DIR$/cadmin/templates/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.tpl" afterPath="$PROJECT_DIR$/templates/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/index.php" afterPath="$PROJECT_DIR$/cadmin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/results.tpl" afterPath="$PROJECT_DIR$/templates/results.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user.php" afterPath="$PROJECT_DIR$/controllers/user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/vocab.conf" afterPath="$PROJECT_DIR$/configs/vocab.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates_c/60b9d6acb16446c65d6a22fde7e2235c105d4d80.file.footer.tpl.php" afterPath="$PROJECT_DIR$/cadmin/templates_c/60b9d6acb16446c65d6a22fde7e2235c105d4d80.file.footer.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates_c/7a54c0c6672e7432b07bceaa9b76ca6e0ef7c9a9.file.header.tpl.php" afterPath="$PROJECT_DIR$/cadmin/templates_c/7a54c0c6672e7432b07bceaa9b76ca6e0ef7c9a9.file.header.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates_c/a3fa59bd41bb84486a9409d4965ca1d6c7262e3a.file.configs.tpl.php" afterPath="$PROJECT_DIR$/cadmin/templates_c/a3fa59bd41bb84486a9409d4965ca1d6c7262e3a.file.configs.tpl.php" />
     </list>
     <ignored path="universal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="templates_c/" />
+    <ignored path="cadmin/templates_c/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +34,7 @@
       <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cadmin/templates/header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="204" max-vertical-offset="1411">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1411">
               <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
               <folding />
             </state>
@@ -59,7 +44,7 @@
       <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cadmin/templates/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187">
+            <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
               <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
               <folding />
             </state>
@@ -69,7 +54,7 @@
       <file leaf-file-name="vocab.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configs/vocab.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="340">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -79,7 +64,7 @@
       <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="204">
               <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
               <folding />
             </state>
@@ -89,7 +74,7 @@
       <file leaf-file-name="feedback.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/feedback.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="901">
+            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="901">
               <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
               <folding />
             </state>
@@ -99,7 +84,7 @@
       <file leaf-file-name="dream.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/dream.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05862069" vertical-offset="0" max-vertical-offset="870">
+            <state vertical-scroll-proportion="0.09010601" vertical-offset="0" max-vertical-offset="566">
               <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
               <folding />
             </state>
@@ -109,7 +94,7 @@
       <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538" vertical-offset="969" max-vertical-offset="1955">
+            <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1955">
               <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
               <folding />
             </state>
@@ -119,7 +104,7 @@
       <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306">
+            <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="306">
               <caret line="4" column="47" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="47" />
               <folding />
             </state>
@@ -129,7 +114,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.807692" vertical-offset="0" max-vertical-offset="799">
+            <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="799">
               <caret line="41" column="33" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="33" />
               <folding />
             </state>
@@ -139,7 +124,7 @@
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6153846" vertical-offset="510" max-vertical-offset="2856">
+            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2856">
               <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
               <folding>
                 <element signature="n#Insert#0;n#!!top" expanded="false" />
@@ -176,30 +161,6 @@
                 <element signature="e#7525#8055#0#PHP" expanded="false" />
                 <element signature="n#deleteFeedBack#0;n#Delete#0;n#!!top" expanded="false" />
                 <element signature="e#8170#8451#0#PHP" expanded="false" />
-                <marker date="1448386577659" expanded="false" signature="566:631" placeholder="INSERT INTO ..." />
-                <marker date="1448386577659" expanded="false" signature="1354:1419" placeholder="INSERT INTO ..." />
-                <marker date="1448386577659" expanded="false" signature="1895:1929" placeholder="INSERT INTO ..." />
-                <marker date="1448386577659" expanded="true" signature="3309:3330" placeholder="SELECT * FRO..configs..." />
-                <marker date="1448386577659" expanded="false" signature="3692:3732" placeholder="SELECT * FRO..dreambook..." />
-                <marker date="1448386577659" expanded="false" signature="4142:4177" placeholder="SELECT * FRO..dreambook..." />
-                <marker date="1448386577659" expanded="false" signature="4526:4561" placeholder="SELECT * FRO..info..." />
-                <marker date="1448386577659" expanded="false" signature="4968:4998" placeholder="SELECT * FRO..info..." />
-                <marker date="1448386577659" expanded="false" signature="5349:5385" placeholder="SELECT * FRO..files..." />
-                <marker date="1448386577659" expanded="false" signature="5731:5749" placeholder="SELECT * FRO..main..." />
-                <marker date="1448386577659" expanded="false" signature="6103:6142" placeholder="SELECT * FRO..feedback..." />
-                <marker date="1448386577659" expanded="false" signature="6560:6593" placeholder="SELECT * FRO..dreambook..." />
-                <marker date="1448386577659" expanded="false" signature="6898:6931" placeholder="DELETE FROM ..." />
-                <marker date="1448386577659" expanded="false" signature="7288:7316" placeholder="DELETE FROM ..." />
-                <marker date="1448386577659" expanded="false" signature="7668:7697" placeholder="SELECT * FRO..files..." />
-                <marker date="1448386577659" expanded="false" signature="7927:7956" placeholder="DELETE FROM ..." />
-                <marker date="1448386577659" expanded="false" signature="8317:8349" placeholder="DELETE FROM ..." />
-                <marker date="1448386577659" expanded="true" signature="8904:8962" placeholder="UPDATE dream..." />
-                <marker date="1448386577659" expanded="true" signature="8904:8964" placeholder="UPDATE confi..." />
-                <marker date="1448386577659" expanded="false" signature="9553:9607" placeholder="UPDATE dream..." />
-                <marker date="1448386577659" expanded="false" signature="9921:9954" placeholder="SELECT * FRO..dreambook..." />
-                <marker date="1448386577659" expanded="false" signature="10326:10364" placeholder="UPDATE dream..." />
-                <marker date="1448386577659" expanded="false" signature="11118:11179" placeholder="UPDATE info ..." />
-                <marker date="1448386577659" expanded="false" signature="11605:11634" placeholder="UPDATE main ..." />
               </folding>
             </state>
           </provider>
@@ -483,7 +444,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cadmin/templates_c" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
@@ -512,15 +473,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -539,17 +500,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16044776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16204691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -585,6 +546,121 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1411">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/vocab.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="340">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="204">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/feedback.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="901">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dream.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1955">
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="306">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="799">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2856">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+          <folding>
+            <element signature="n#Insert#0;n#!!top" expanded="false" />
+            <element signature="n#setDream#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#173#937#0#PHP" expanded="false" />
+            <element signature="e#723#869#0#PHP" expanded="false" />
+            <element signature="n#setInfo#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#1047#1560#0#PHP" expanded="false" />
+            <element signature="n#addFile#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#1670#2221#0#PHP" expanded="false" />
+            <element signature="e#2027#2157#0#PHP" expanded="false" />
+            <element signature="e#2369#2844#0#PHP" expanded="false" />
+            <element signature="e#2480#2675#0#PHP" expanded="false" />
+            <element signature="e#2956#3085#0#PHP" expanded="false" />
+            <element signature="e#3571#3626#0#PHP" expanded="false" />
+            <element signature="n#getEditDreams#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#3968#4024#0#PHP" expanded="false" />
+            <element signature="n#getInfo#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#4410#4460#0#PHP" expanded="false" />
+            <element signature="n#getEditInfo#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#4795#4850#0#PHP" expanded="false" />
+            <element signature="n#getFiles#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5232#5283#0#PHP" expanded="false" />
+            <element signature="n#getMain#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5615#5665#0#PHP" expanded="false" />
+            <element signature="n#getFeedBack#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5983#6037#0#PHP" expanded="false" />
+            <element signature="n#deleteDream#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#6416#7034#0#PHP" expanded="false" />
+            <element signature="e#6722#6862#0#PHP" expanded="false" />
+            <element signature="n#deleteInfo#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#7145#7414#0#PHP" expanded="false" />
+            <element signature="n#deleteFile#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#7525#8055#0#PHP" expanded="false" />
+            <element signature="n#deleteFeedBack#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#8170#8451#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cadmin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1020">
@@ -621,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="833">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,30 +739,6 @@
             <element signature="e#7525#8055#0#PHP" expanded="false" />
             <element signature="n#deleteFeedBack#0;n#Delete#0;n#!!top" expanded="false" />
             <element signature="e#8170#8451#0#PHP" expanded="false" />
-            <marker date="1448386577659" expanded="false" signature="566:631" placeholder="INSERT INTO ..." />
-            <marker date="1448386577659" expanded="false" signature="1354:1419" placeholder="INSERT INTO ..." />
-            <marker date="1448386577659" expanded="false" signature="1895:1929" placeholder="INSERT INTO ..." />
-            <marker date="1448386577659" expanded="true" signature="3309:3330" placeholder="SELECT * FRO..configs..." />
-            <marker date="1448386577659" expanded="false" signature="3692:3732" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="4142:4177" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="4526:4561" placeholder="SELECT * FRO..info..." />
-            <marker date="1448386577659" expanded="false" signature="4968:4998" placeholder="SELECT * FRO..info..." />
-            <marker date="1448386577659" expanded="false" signature="5349:5385" placeholder="SELECT * FRO..files..." />
-            <marker date="1448386577659" expanded="false" signature="5731:5749" placeholder="SELECT * FRO..main..." />
-            <marker date="1448386577659" expanded="false" signature="6103:6142" placeholder="SELECT * FRO..feedback..." />
-            <marker date="1448386577659" expanded="false" signature="6560:6593" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="6898:6931" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="false" signature="7288:7316" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="false" signature="7668:7697" placeholder="SELECT * FRO..files..." />
-            <marker date="1448386577659" expanded="false" signature="7927:7956" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="false" signature="8317:8349" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="true" signature="8904:8962" placeholder="UPDATE dream..." />
-            <marker date="1448386577659" expanded="true" signature="8904:8964" placeholder="UPDATE confi..." />
-            <marker date="1448386577659" expanded="false" signature="9553:9607" placeholder="UPDATE dream..." />
-            <marker date="1448386577659" expanded="false" signature="9921:9954" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="10326:10364" placeholder="UPDATE dream..." />
-            <marker date="1448386577659" expanded="false" signature="11118:11179" placeholder="UPDATE info ..." />
-            <marker date="1448386577659" expanded="false" signature="11605:11634" placeholder="UPDATE main ..." />
           </folding>
         </state>
       </provider>
@@ -704,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4352">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="833">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4730195" vertical-offset="166" max-vertical-offset="2261">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4352">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +884,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538" vertical-offset="969" max-vertical-offset="1955">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1955">
           <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
           <folding />
         </state>
@@ -845,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6153846" vertical-offset="510" max-vertical-offset="2856">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2856">
           <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
           <folding>
             <element signature="n#Insert#0;n#!!top" expanded="false" />
@@ -882,37 +929,13 @@
             <element signature="e#7525#8055#0#PHP" expanded="false" />
             <element signature="n#deleteFeedBack#0;n#Delete#0;n#!!top" expanded="false" />
             <element signature="e#8170#8451#0#PHP" expanded="false" />
-            <marker date="1448386577659" expanded="false" signature="566:631" placeholder="INSERT INTO ..." />
-            <marker date="1448386577659" expanded="false" signature="1354:1419" placeholder="INSERT INTO ..." />
-            <marker date="1448386577659" expanded="false" signature="1895:1929" placeholder="INSERT INTO ..." />
-            <marker date="1448386577659" expanded="true" signature="3309:3330" placeholder="SELECT * FRO..configs..." />
-            <marker date="1448386577659" expanded="false" signature="3692:3732" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="4142:4177" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="4526:4561" placeholder="SELECT * FRO..info..." />
-            <marker date="1448386577659" expanded="false" signature="4968:4998" placeholder="SELECT * FRO..info..." />
-            <marker date="1448386577659" expanded="false" signature="5349:5385" placeholder="SELECT * FRO..files..." />
-            <marker date="1448386577659" expanded="false" signature="5731:5749" placeholder="SELECT * FRO..main..." />
-            <marker date="1448386577659" expanded="false" signature="6103:6142" placeholder="SELECT * FRO..feedback..." />
-            <marker date="1448386577659" expanded="false" signature="6560:6593" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="6898:6931" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="false" signature="7288:7316" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="false" signature="7668:7697" placeholder="SELECT * FRO..files..." />
-            <marker date="1448386577659" expanded="false" signature="7927:7956" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="false" signature="8317:8349" placeholder="DELETE FROM ..." />
-            <marker date="1448386577659" expanded="true" signature="8904:8962" placeholder="UPDATE dream..." />
-            <marker date="1448386577659" expanded="true" signature="8904:8964" placeholder="UPDATE confi..." />
-            <marker date="1448386577659" expanded="false" signature="9553:9607" placeholder="UPDATE dream..." />
-            <marker date="1448386577659" expanded="false" signature="9921:9954" placeholder="SELECT * FRO..dreambook..." />
-            <marker date="1448386577659" expanded="false" signature="10326:10364" placeholder="UPDATE dream..." />
-            <marker date="1448386577659" expanded="false" signature="11118:11179" placeholder="UPDATE info ..." />
-            <marker date="1448386577659" expanded="false" signature="11605:11634" placeholder="UPDATE main ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cadmin/templates/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
           <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
           <folding />
         </state>
@@ -920,7 +943,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.807692" vertical-offset="0" max-vertical-offset="799">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="799">
           <caret line="41" column="33" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="33" />
           <folding />
         </state>
@@ -928,7 +951,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="306">
           <caret line="4" column="47" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="47" />
           <folding />
         </state>
@@ -936,7 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="204">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
           <folding />
         </state>
@@ -944,7 +967,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/feedback.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="901">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="901">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
           <folding />
         </state>
@@ -952,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/dream.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05862069" vertical-offset="0" max-vertical-offset="870">
+        <state vertical-scroll-proportion="0.09010601" vertical-offset="0" max-vertical-offset="566">
           <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
           <folding />
         </state>

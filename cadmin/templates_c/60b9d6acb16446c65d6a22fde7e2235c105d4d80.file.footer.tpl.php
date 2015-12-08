@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2015-11-25 18:00:14
+<?php /* Smarty version Smarty-3.1.15, created on 2015-12-08 15:08:28
          compiled from "C:\UwAmp\www\universal\cadmin\templates\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1585556548ee0b32722-77692289%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '60b9d6acb16446c65d6a22fde7e2235c105d4d80' => 
     array (
       0 => 'C:\\UwAmp\\www\\universal\\cadmin\\templates\\footer.tpl',
-      1 => 1448460008,
+      1 => 1449572896,
       2 => 'file',
     ),
   ),
