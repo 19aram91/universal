@@ -2,38 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="425fca7d-451e-4851-b363-78218e96b8eb" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\2bc436304138b9374b436cbeccfbd15c10d056f1.file.dreambook.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\3e545678b28a92c60f33355b5a5764819fbf42b7.file.header.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\4ff7a6a57298df1f0d6f3391424dbac6b8f65e77.file.feedback.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\54ac07bc8f002e8dc06e97bb4a426d1911a4c908.file.main.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\60b9d6acb16446c65d6a22fde7e2235c105d4d80.file.footer.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\64dc0f53a42be5b3a7d2ba591c653348a6eeab8a.file.login.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\6656cc4749485c53585a0c375c0fcdf69dce44de.file.files.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\6d86bfd97012beab6447cdf7a94814e9e92fb140.file.edit_dream.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\6fce0097d406d672b493ad35c9edb4c1cefca6ce.file.main.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\742811cd1895946b62b448565cda97bda8013b32.file.info.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\7a54c0c6672e7432b07bceaa9b76ca6e0ef7c9a9.file.header.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\9d1e67e6793795ef0eb289c719edd9ff37baa84f.file.add_info.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\9f4949197dd03cf2b0911e4f3c7a27608680e58c.file.info.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\a25cd231c08319430b07729f7965794f25329ae0.file.add_dream.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\a3fa59bd41bb84486a9409d4965ca1d6c7262e3a.file.configs.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\a502e95e93f7e9deaad5f563c29f6082cd5d4def.file.details.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\a78594c4fcd29cbd3bb77da4fd7ed50b753a384b.file.dreambook.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\b77a06aeb0dfb0630ffd2601dfd3e91a7b82f765.file.edit_info.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\bd2a2b7caf37c06386b8bd44abf23ba9036a3414.file.stats.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\d54d7e108a097a33969bf28eb7bd0570464a9df2.file.footer.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\e70245c74cc4c602e2c11e6639691ccf431b84c1.file.addDream.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\f90be83b235fb03cc225b11607032e9ddd415899.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\UwAmp\www\universal\cadmin\templates_c\fe7730b43f28dd7265d37960f367a87a2fbf957a.vocab.conf.config.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore.txt" afterPath="$PROJECT_DIR$/.gitignore.txt" />
     </list>
     <ignored path="universal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
-    <manually-removed-from-ignored>
-      <directory path="templates_c/" />
-      <directory path="cadmin/templates_c/" />
-    </manually-removed-from-ignored>
+    <ignored path="cadmin/templates_c/" />
+    <ignored path="templates_c/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -467,7 +442,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cadmin/templates_c" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates_c" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
