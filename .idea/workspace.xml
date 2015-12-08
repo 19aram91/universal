@@ -2,15 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="425fca7d-451e-4851-b363-78218e96b8eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates_c/60b9d6acb16446c65d6a22fde7e2235c105d4d80.file.footer.tpl.php" afterPath="$PROJECT_DIR$/cadmin/templates_c/60b9d6acb16446c65d6a22fde7e2235c105d4d80.file.footer.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates_c/7a54c0c6672e7432b07bceaa9b76ca6e0ef7c9a9.file.header.tpl.php" afterPath="$PROJECT_DIR$/cadmin/templates_c/7a54c0c6672e7432b07bceaa9b76ca6e0ef7c9a9.file.header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates_c/a3fa59bd41bb84486a9409d4965ca1d6c7262e3a.file.configs.tpl.php" afterPath="$PROJECT_DIR$/cadmin/templates_c/a3fa59bd41bb84486a9409d4965ca1d6c7262e3a.file.configs.tpl.php" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\0f82e84a563a03695ee8a0804d58acc42cd02d05.file.results.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\10e0737838b4a574ef135d0c601e7b602cfaf37a.file.header.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\139df86e69c97491334b7440c22182c05a3649a7.file.results.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\1be7ff7fdee636597edd726ee98dfef4bfd55d1f.file.footer.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\20a5b87bf1d249a8e4b5bdf6dc560aa9c65c681a.file.header.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\2ae5efdf1ec61dd43107d1cd0bd60dc69ec42efe.file.header.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\348bceba9637bc1c60a6d62997aa5bdd001d1c89.file.dream.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\36bcd7ac78a222ac089610048625db2e6fc876a9.file.dream.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\3fce68df80e6def387c722720a8c43039025f368.vocab.conf.config.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\400a53cb6af99db8756db391b7d1322405505b4d.file.horoscope.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\480bb27da9fdfb0a9bdcbf1292c3a4907f690dc7.file.footer.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\4b9ee3eb436c3776c2ec17b8b1c3e83d10f6ddd4.file.home.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\6a11e67ec05e2fe0be2d046c6178d39c46cdbd82.file.feedback.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\75087c9f68b9021b35c96fdfa3ecfd1571f1b7e5.file.info.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\7f9dc91d6782adaae19b6d3d3c5373651c299b17.file.horoscope.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\86f31bea36745d7880a3307675985632e9230a43.file.home.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\97d060df136bc68287855ad0037b446ebb85b73d.file.home.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\ab7755c9dae14f847e3cac29631cc2ab39d09ffd.file.footer.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\bc82b1be5a1453a3dd092fc9d959ba0a7113e41f.file.info.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\d50ef9669687060860202c6454f89419dbf7535c.vocab.conf.config.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\dc87a8fe80f5b0d058546f621d4058b19a2a931b.file.404.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\f8997cf270361c02f71fd67aabd7bf5b7ec46839.file.horoscope2.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\UwAmp\www\universal\templates_c\f90be83b235fb03cc225b11607032e9ddd415899.file.index.tpl.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="universal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
-    <ignored path="templates_c/" />
     <ignored path="cadmin/templates_c/" />
+    <manually-removed-from-ignored>
+      <directory path="templates_c/" />
+    </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +107,7 @@
       <file leaf-file-name="dream.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/dream.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09010601" vertical-offset="0" max-vertical-offset="566">
+            <state vertical-scroll-proportion="0.09026549" vertical-offset="0" max-vertical-offset="565">
               <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
               <folding />
             </state>
@@ -503,8 +526,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3300866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -513,7 +536,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16204691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -975,7 +998,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/dream.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09010601" vertical-offset="0" max-vertical-offset="566">
+        <state vertical-scroll-proportion="0.09026549" vertical-offset="0" max-vertical-offset="565">
           <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
           <folding />
         </state>
