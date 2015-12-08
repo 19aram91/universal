@@ -1,16 +1,42 @@
-<!DOCTYPE html>
-<html lang="ru">
+<?php /* Smarty version Smarty-3.1.15, created on 2015-03-30 23:15:34
+         compiled from "C:\xampp\htdocs\sonnik_new\templates\header.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:303405516ad7ecf9a54-15692070%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '2ae5efdf1ec61dd43107d1cd0bd60dc69ec42efe' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\sonnik_new\\templates\\header.tpl',
+      1 => 1427750132,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '303405516ad7ecf9a54-15692070',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_5516ad7ede4750_66695573',
+  'variables' => 
+  array (
+    'top_dream_list' => 0,
+    'tdl' => 0,
+    'info_list' => 0,
+    'il' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5516ad7ede4750_66695573')) {function content_5516ad7ede4750_66695573($_smarty_tpl) {?><!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Сонник</title>
     <meta charset="utf-8">
-    <meta name="description" content="Сонник онлайн, толкование снов">
-    <meta name="keywords" content="сонник, сон, толкование снов, сновидение, sonnik, видеть во сне">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{$root}/img/favicon.ico" type="image/x-icon"/>
+    <title>Sonnik</title>
+
     <!-- Bootstrap -->
-    <link href="{$root}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{$root}/css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,9 +51,8 @@
 <div class="container">
     <div class="row header">
         <div class="col-md-6 col-sm-6 col-xs-12 logo">
-            {$slogan_bool = ($conf[0].slogan_show == 0) ? false : true}
-            <div class="logo-head"><a href="{$root}"> {$conf[0].site_name} </a></div>
-            {if $slogan_bool} <div class="logo-slog">{$conf[0].slogan_name}</div> {/if}
+            <div class="logo-head"><a href="index.php"> СОННИК </a></div>
+            <div class="logo-slog">Толкователь снов</div>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="searchbox">
@@ -73,7 +98,7 @@
             <div class="navs">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <label>Top 10 запрашиваемые сны</label>
+                        <label>Частые сны</label>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resp-nav">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
@@ -83,9 +108,15 @@
                     </div>
                     <div class="collapse navbar-collapse" id="resp-nav">
                         <ul class="nav navbar-nav">
-                            {foreach $top_dream_list as $tdl}
-                                <li><a href="{$root}/dream/{$tdl.ID}"> {$tdl.header} </a></li>
-                            {/foreach}
+                            <?php  $_smarty_tpl->tpl_vars['tdl'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['tdl']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['top_dream_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['tdl']->key => $_smarty_tpl->tpl_vars['tdl']->value) {
+$_smarty_tpl->tpl_vars['tdl']->_loop = true;
+?>
+                                <li><a href="?page=dream&id=<?php echo $_smarty_tpl->tpl_vars['tdl']->value['ID'];?>
+"> <?php echo $_smarty_tpl->tpl_vars['tdl']->value['header'];?>
+ </a></li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </nav>
@@ -95,16 +126,22 @@
                         <label>Интересные факты</label>
                     </div>
                     <ul class="nav navbar-nav">
-                        {foreach $info_list as $il}
-                            <li><a href="{$root}/info/{$il.ID}"> {$il.header} </a></li>
-                        {/foreach}
+                        <?php  $_smarty_tpl->tpl_vars['il'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['il']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['info_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['il']->key => $_smarty_tpl->tpl_vars['il']->value) {
+$_smarty_tpl->tpl_vars['il']->_loop = true;
+?>
+                            <li><a href="?page=info&id=<?php echo $_smarty_tpl->tpl_vars['il']->value['ID'];?>
+"> <?php echo $_smarty_tpl->tpl_vars['il']->value['header'];?>
+ </a></li>
+                        <?php } ?>
                     </ul>
                 </nav>
                 <hr />
                 <nav class="navbar navbar-default">
                     <ul class="nav navbar-nav">
-                            <li><a href="{$root}/horoscope/1"> Ежедневный гороскоп </a></li>
+                            <li><a href="?page=horoscope"> Ежедневный гороскоп </a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div><?php }} ?>

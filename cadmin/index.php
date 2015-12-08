@@ -2,6 +2,7 @@
 session_start();
 require('../libs/Smarty.class.php');
 require('../controllers/admin.php');
+date_default_timezone_set('Etc/GMT-4');
 
 $smarty = new Smarty();
 $select = new Select();
@@ -20,6 +21,8 @@ $insert = new Insert();
 $update = new Update();
 $delete = new Delete();
 
+$configs = $select->getConfigs();
+$smarty->assign('configs', $configs);
 $dreams = $select->getDreams();
 $smarty->assign('dreams', $dreams);
 $dream = $select->getEditDreams();
@@ -39,6 +42,7 @@ $insert->setDream();
 $insert->setInfo();
 $insert->addFile();
 
+$update->editConfig();
 $update->editDream();
 $update->editInfo();
 $update->editMain();
