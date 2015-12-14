@@ -14,9 +14,9 @@
 <script src="../js/admin_functions.js"></script>
 
 <!-- Morris Charts JavaScript -->
-<script src="../js/plugins/morris/raphael.min.js"></script>
-<script src="../js/plugins/morris/morris.min.js"></script>
-<script src="../js/plugins/morris/morris-data.js"></script>
+{*<script src="../js/plugins/morris/raphael.min.js"></script>*}
+{*<script src="../js/plugins/morris/morris.min.js"></script>*}
+{*<script src="../js/plugins/morris/morris-data.js"></script>*}
 
 {literal}
     <script type="text/javascript">
