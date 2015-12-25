@@ -107,7 +107,7 @@ class Select extends Connect{
         $STH = $DBH->prepare("SELECT * FROM configs");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        return $result[0];
     }
 
     function getDreams(){
@@ -290,10 +290,17 @@ class Update extends Connect{
             $show = isset($_POST['slogan_show']) ? 1 : 0;
             $name = $_POST['site_name'];
             $slogan = $_POST['slogan_name'];
+            $title = $_POST['site_title'];
+            $bg_color = $_POST['bg_color'];
+            $hf_color = $_POST['hf_color'];
+            $side_color = $_POST['side_color'];
+            $main_color = $_POST['main_color'];
+            $font_color = $_POST['font_color'];
 
-            $data = array($name, $slogan, $show);
+            $data = array($name, $slogan, $show, $title, $bg_color, $hf_color, $side_color, $main_color, $font_color);
             $DBH = Connect::getDBH();
-            $STH = $DBH->prepare("UPDATE configs SET site_name=?, slogan_name=?, slogan_show=?");
+            $STH = $DBH->prepare("UPDATE configs SET site_name=?, slogan_name=?, slogan_show=?, site_title=?,
+                                 bg_color=?, hf_color=?, side_color=?, main_color=?, font_color=?");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
             header('location:index.php?page=configs');
         }

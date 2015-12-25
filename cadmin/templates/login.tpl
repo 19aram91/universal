@@ -73,7 +73,12 @@
                 }
 
             });
+        });
 
+        $(document).on("keydown", "#user, #pass", function(e){
+            if(e.which == 13){
+                $('#signup').click();
+            }
         });
     </script>
 {/literal}
