@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Admin Page</a>
+            <a class="navbar-brand" href="index.php">{$configs.site_name}'s Admin Page</a>
         </div>
         <!-- Top Menu Items -->
         <ul class="nav navbar-right top-nav">

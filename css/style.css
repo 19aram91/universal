@@ -1,12 +1,12 @@
-body{
-    background-image: url("../img/galaxy.jpg");
-    background-size: 100% 100%;
-    background-attachment: fixed;
-}
+/*body{*/
+    /*background-image: url("../img/galaxy.jpg");*/
+    /*background-size: 100% 100%;*/
+    /*background-attachment: fixed;*/
+/*}*/
 
 .header {
     height: 105px;
-    background-color: rgb(49, 17, 87);
+    /*background-color: rgb(49, 17, 87);*/
     opacity: .9;
 }
 
@@ -83,7 +83,7 @@ body{
 }
 
 .letter-nav{
-    background: rgb(20, 3, 32);
+    /*background: rgb(20, 3, 32);*/
     opacity: .96;
     color: #D1B7E4;
 }
@@ -103,13 +103,13 @@ body{
 }
 
 .content{
-    background-color: rgb(27, 19, 53);
+    /*background-color: rgb(27, 19, 53);*/
     opacity: .96;
-    color: #D1B7E4;
+    /*color: #D1B7E4;*/
 }
 
 .main{
-    background-color: rgb(20, 3, 32);
+    /*background-color: rgb(20, 3, 32);*/
     min-height: 500px;
     padding: 15px;
 }
@@ -119,7 +119,7 @@ body{
 }
 
 .footer{
-    background-color: rgb(49, 17, 87);
+    /*background-color: rgb(49, 17, 87);*/
     min-height: 30px;
     opacity: .9;
     text-align: center;

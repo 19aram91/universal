@@ -98,11 +98,6 @@ class Select extends Connect{
     }
 
     function getConfigs(){
-        $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
-        if($page != 'configs'){
-            return;
-        }
-
         $DBH = Connect::getDBH();
         $STH = $DBH->prepare("SELECT * FROM configs");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
@@ -291,17 +286,30 @@ class Update extends Connect{
             $name = $_POST['site_name'];
             $slogan = $_POST['slogan_name'];
             $title = $_POST['site_title'];
+            $keywords = $_POST['keywords'];
+            $description = $_POST['description'];
             $bg_color = $_POST['bg_color'];
             $hf_color = $_POST['hf_color'];
             $side_color = $_POST['side_color'];
             $main_color = $_POST['main_color'];
             $font_color = $_POST['font_color'];
 
-            $data = array($name, $slogan, $show, $title, $bg_color, $hf_color, $side_color, $main_color, $font_color);
+            $data = array($name, $slogan, $show, $keywords, $description, $title, $bg_color, $hf_color, $side_color, $main_color, $font_color);
             $DBH = Connect::getDBH();
-            $STH = $DBH->prepare("UPDATE configs SET site_name=?, slogan_name=?, slogan_show=?, site_title=?,
+            $STH = $DBH->prepare("UPDATE configs SET site_name=?, slogan_name=?, slogan_show=?, keywords=?, description=?, site_title=?,
                                  bg_color=?, hf_color=?, side_color=?, main_color=?, font_color=?");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
+
+            $cssFile = fopen("../css/custom.css", "w") or die("Unable to open file!");
+            $style = "body {background-color: $bg_color ;}
+                .header {background-color: $hf_color ;}
+                .footer {background-color: $hf_color ;}
+                .content {background-color: $side_color ; color: $font_color;}
+                .main, .letter-nav {background-color: $main_color ;}";
+
+            fwrite($cssFile, $style);
+            fclose($cssFile);
+
             header('location:index.php?page=configs');
         }
     }
@@ -310,7 +318,6 @@ class Update extends Connect{
         $action = (!isset($_POST['action'])) ? "" : $_POST['action'];
         if($action == "edit_dream")
         {
-            $DBH = Connect::getDBH();
             $id = intval($_POST['id']);
             $header = $_POST['dream_header'];
             $description = $_POST['dream_desc'];

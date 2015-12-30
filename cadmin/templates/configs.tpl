@@ -32,10 +32,14 @@
                             <label for="slideThree"></label>
                         </div>
                     </div>
-
-                    <input type="hidden" name="action" value="edit_config"/>
-                    <button type="submit" class="btn btn-default">Edit</button>
-                </form>
+                    <div class="form-group">
+                        <label>Keywords </label>
+                        <textarea name="keywords">{$configs.keywords}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Description </label>
+                        <textarea name="description"> {$configs.description} </textarea>
+                    </div>
             </div>
 
             <div class="col-lg-4">
@@ -65,6 +69,9 @@
                     <span class="input-group-addon"><i></i></span>
                 </div>
             </div>
+            <input type="hidden" name="action" value="edit_config"/>
+            <button type="submit" class="btn btn-default">Save</button>
+            </form>
         </div>
     </div>
 </div>
