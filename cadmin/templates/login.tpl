@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>My-dreambook</title>
+    <title>{$configs.site_name}'s Admin Page</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" href="img/favicon.ico">
@@ -19,7 +19,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h5 class="text-center">
-                        My-dreambook Admin Page</h5>
+                        {$configs.site_name}'s Admin Page</h5>
                     <form class="form form-signup" role="form">
                         <div class="form-group">
                             <div class="input-group">
@@ -37,7 +37,7 @@
                                 <span class="input-group-addon" style="display: none" id="response"></span>
                         </div>
                 </div>
-                <a class="btn btn-sm btn-primary btn-block" role="button" id="signup">SIGN UP</a> </form>
+                <a class="btn btn-sm btn-primary btn-block" role="button" id="signup">SIGN IN</a> </form>
             </div>
         </div>
     </div>
@@ -73,7 +73,12 @@
                 }
 
             });
+        });
 
+        $(document).on("keydown", "#user, #pass", function(e){
+            if(e.which == 13){
+                $('#signup').click();
+            }
         });
     </script>
 {/literal}

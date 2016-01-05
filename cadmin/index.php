@@ -8,6 +8,8 @@ $smarty = new Smarty();
 $select = new Select();
 
 $select->login();
+$configs = $select->getConfigs();
+$smarty->assign('configs', $configs);
 
 if(!isset($_SESSION['loged_in']))
 {
@@ -21,8 +23,6 @@ $insert = new Insert();
 $update = new Update();
 $delete = new Delete();
 
-$configs = $select->getConfigs();
-$smarty->assign('configs', $configs);
 $dreams = $select->getDreams();
 $smarty->assign('dreams', $dreams);
 $dream = $select->getEditDreams();

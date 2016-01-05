@@ -9,7 +9,7 @@ class Select extends Connect
         $STH = $DBH->prepare("SELECT * FROM configs");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        return $result[0];
     }
 
     function getTopDreams()

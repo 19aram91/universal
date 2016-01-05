@@ -4,7 +4,7 @@
 </div>
 <div class="row footer">
     <span class="pull-left contact"><a href="{$root}/feedback/message"> Свяжитесь с нами </a></span>
-    <span class="copyright">&copy; 2015 {$conf[0].site_name} . все права защищены.</span>
+    <span class="copyright">&copy; 2015 {$conf.site_name} . все права защищены.</span>
 </div>
 </div>
 
