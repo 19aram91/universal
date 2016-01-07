@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    {#dreambook#} -- <small>total <b>{$dreams|@count}</b> items</small> -- <small> <a href="?page=add_dream">Add New</a> </small>
+                    {#article#} -- <small>total <b>{$articles|@count}</b> items</small> -- <small> <a href="?page=add_article">Add New</a> </small>
                 </h1>
             </div>
         </div>
@@ -24,14 +24,14 @@
                         </tr>
                         </thead>
                         <tbody>
-                        {foreach $dreams as $d}
+                        {foreach $articles as $a}
                             <tr>
-                                <td>{$d.header}</td>
-                                <td>{$d.description|truncate:50}</td>
-                                <td>{$d.watch_count}</td>
+                                <td>{$a.header}</td>
+                                <td>{$a.description|truncate:50}</td>
+                                <td>{$a.watch_count}</td>
                                 <td>
-                                    <a href="index.php?page=edit_dream&id={$d.ID}"> <img src="../img/pencil.png"> </a>
-                                    <a onClick="return confirmDelete()" href="index.php?action=delete_dream&id={$d.ID}"> <img src="../img/cross.png"> </a>
+                                    <a href="index.php?page=edit_article&id={$a.ID}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>
+                                    <a onClick="return confirmDelete()" href="index.php?action=delete_article&id={$a.ID}"><i class="fa fa-times fa-lg fa-fw"></i></a>
                                 </td>
                             </tr>
                         {/foreach}

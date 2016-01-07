@@ -69,7 +69,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li {if $page=="configs"}class="active" {/if}><a href="?page=configs"><i class="fa fa-fw fa-star"></i> {#conf#}</a></li>
-                <li {if $page=="dreambook"}class="active" {/if}><a href="?page=dreambook"><i class="fa fa-fw fa-star"></i> {#dreams#}</a></li>
+                <li {if $page=="articles"}class="active" {/if}><a href="?page=articles"><i class="fa fa-fw fa-star"></i> {#article#}</a></li>
                 <li {if $page=="info"}class="active" {/if}><a href="?page=info"><i class="fa fa-fw fa-info"></i> {#information#}</a></li>
                 <li {if $page=="main"}class="active" {/if}><a href="?page=main"><i class="fa fa-fw fa-desktop"></i> {#main#}</a></li>
             </ul>

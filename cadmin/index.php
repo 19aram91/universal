@@ -23,10 +23,10 @@ $insert = new Insert();
 $update = new Update();
 $delete = new Delete();
 
-$dreams = $select->getDreams();
-$smarty->assign('dreams', $dreams);
-$dream = $select->getEditDreams();
-$smarty->assign('dream', $dream);
+$articles = $select->getArticles();
+$smarty->assign('articles', $articles);
+$article = $select->getEditArticle();
+$smarty->assign('article', $article);
 $info = $select->getInfo();
 $smarty->assign('info', $info);
 $einfo = $select->getEditInfo();
@@ -38,16 +38,16 @@ $smarty->assign('main_text', $main_text);
 $feedback = $select->getFeedBack();
 $smarty->assign('feedback', $feedback);
 
-$insert->setDream();
+$insert->setArticle();
 $insert->setInfo();
 $insert->addFile();
 
 $update->editConfig();
-$update->editDream();
+$update->editArticle();
 $update->editInfo();
 $update->editMain();
 
-$delete->deleteDream();
+$delete->deleteArticle();
 $delete->deleteInfo();
 $delete->deleteFile();
 $delete->deleteFeedBack();

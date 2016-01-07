@@ -4,26 +4,26 @@ require_once('../config.php');
 
 class Insert extends Connect{
 
-    function setDream(){
+    function setArticle(){
         $action = (!isset($_POST['action'])) ? "" : $_POST['action'];
-        if($action == "add_dream")
+        if($action == "add_article")
         {
-            $header = $_POST['dream_header'];
-            $description = $_POST['dream_desc'];
+            $header = $_POST['article_header'];
+            $description = $_POST['article_desc'];
 
             $rand = uniqid();
-            $img = $_FILES['dream_img']['size']>0 ? $rand.$_FILES['dream_img']['name'] : 'star.png';
+            $img = $_FILES['article_img']['size']>0 ? $rand.$_FILES['article_img']['name'] : 'star.png';
 
             $data = array($header, $description, $img);
             $DBH = Connect::getDBH();
-            $STH = $DBH->prepare("INSERT INTO dreambook (header, description, img) values (?, ?, ?)");
+            $STH = $DBH->prepare("INSERT INTO articles (header, description, img) values (?, ?, ?)");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 
-            if($_FILES['dream_img']['size']>0){
-                move_uploaded_file($_FILES['dream_img']["tmp_name"], "../img/dreambook/" .$img);
+            if($_FILES['article_img']['size']>0){
+                move_uploaded_file($_FILES['article_img']["tmp_name"], "../img/articles/" .$img);
             }
 
-            header("location:index.php?page=dreambook");
+            header("location:index.php?page=articles");
         }
     }
 
@@ -105,28 +105,28 @@ class Select extends Connect{
         return $result[0];
     }
 
-    function getDreams(){
-        $page = (!isset($_GET['page'])) ? "dreambook" : $_GET['page'];
-        if($page != 'dreambook'){
+    function getArticles(){
+        $page = (!isset($_GET['page'])) ? "articles" : $_GET['page'];
+        if($page != 'articles'){
             return;
         }
 
         $DBH = Connect::getDBH();
-        $STH = $DBH->prepare("SELECT * FROM dreambook ORDER BY ID DESC");
+        $STH = $DBH->prepare("SELECT * FROM articles ORDER BY ID DESC");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
     }
 
-    function getEditDreams(){
+    function getEditArticle(){
         $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
-        if($page != 'edit_dream'){
+        if($page != 'edit_article'){
             return;
         }
 
         $id = isset($_GET['id']) ? $_GET['id'] : 0;
         $DBH = Connect::getDBH();
-        $STH = $DBH->prepare("SELECT * FROM dreambook WHERE ID = $id");
+        $STH = $DBH->prepare("SELECT * FROM articles WHERE ID = $id");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
@@ -202,26 +202,26 @@ class Select extends Connect{
 
 class Delete extends Connect{
 
-    function deleteDream(){
+    function deleteArticle(){
         $action = (!isset($_GET['action'])) ? "" : $_GET['action'];
-        if($action == "delete_dream")
+        if($action == "delete_article")
         {
             $id = $_GET['id'];
 
             $DBH = Connect::getDBH();
-            $STH = $DBH->prepare("SELECT * FROM dreambook WHERE ID=$id");
+            $STH = $DBH->prepare("SELECT * FROM articles WHERE ID=$id");
             $STH->execute()or die(print_r($STH->errorInfo(), true));
             $result = $STH->fetchAll();
 
             if($result[0]['img'] != 'star.png'){
-                $dir="../img/dreambook/".$result[0]['img'];
+                $dir="../img/articles/".$result[0]['img'];
                 unlink($dir);
             }
 
-            $STH = $DBH->prepare("DELETE FROM dreambook where ID = $id");
+            $STH = $DBH->prepare("DELETE FROM articles where ID = $id");
             $STH->execute();
 
-            header("location:index.php?page=dreambook");
+            header("location:index.php?page=articles");
         }
     }
 
@@ -314,43 +314,43 @@ class Update extends Connect{
         }
     }
 
-    function editDream(){
+    function editArticle(){
         $action = (!isset($_POST['action'])) ? "" : $_POST['action'];
-        if($action == "edit_dream")
+        if($action == "edit_article")
         {
             $id = intval($_POST['id']);
-            $header = $_POST['dream_header'];
-            $description = $_POST['dream_desc'];
+            $header = $_POST['article_header'];
+            $description = $_POST['article_desc'];
 
             $data = array($header, $description);
             $DBH = Connect::getDBH();
-            $STH = $DBH->prepare("UPDATE dreambook SET header=?, description=? WHERE ID=$id");
+            $STH = $DBH->prepare("UPDATE articles SET header=?, description=? WHERE ID=$id");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 
             $rand = uniqid();
 
-            if($_FILES['dream_img']['size']>0)
+            if($_FILES['article_img']['size']>0)
             {
-                $img = $rand.$_FILES['dream_img']['name'];
+                $img = $rand.$_FILES['article_img']['name'];
                 $DBH = Connect::getDBH();
-                $STH = $DBH->prepare("SELECT * FROM dreambook WHERE ID=$id");
+                $STH = $DBH->prepare("SELECT * FROM articles WHERE ID=$id");
                 $STH->execute()or die(print_r($STH->errorInfo(), true));
                 $result = $STH->fetchAll();
 
                 if($result[0]['img'] != 'star.png'){
-                    $dir="../img/dreambook/".$result[0]['img'];
+                    $dir="../img/articles/".$result[0]['img'];
                     unlink($dir);
                 }
 
                 $data = array("$img");
-                $STH = $DBH->prepare("UPDATE dreambook SET img = ? WHERE ID=$id");
+                $STH = $DBH->prepare("UPDATE articles SET img = ? WHERE ID=$id");
                 $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 
-                move_uploaded_file($_FILES['dream_img']["tmp_name"],
-                    "../img/dreambook/" . $img);
+                move_uploaded_file($_FILES['article_img']["tmp_name"],
+                    "../img/articles/" . $img);
             }
 
-            header('location:index.php?page=edit_dream&id='.$id);
+            header('location:index.php?page=edit_article&id='.$id);
         }
     }
 
