@@ -1,7 +1,6 @@
 <?php
 require_once('../config.php');
 
-
 class Insert extends Connect{
 
     function setArticle(){
@@ -27,9 +26,9 @@ class Insert extends Connect{
         }
     }
 
-    function setInfo(){
+    function setPages(){
         $action = (!isset($_POST['action'])) ? "" : $_POST['action'];
-        if($action == "add_info")
+        if($action == "add_pages")
         {
             $header = $_POST['info_header'];
             $description = $_POST['info_desc'];
@@ -37,10 +36,10 @@ class Insert extends Connect{
 
             $data = array($header, $description, $position);
             $DBH = Connect::getDBH();
-            $STH = $DBH->prepare("INSERT INTO info (header, description, position) values (?, ?, ?)");
+            $STH = $DBH->prepare("INSERT INTO pages (header, description, position) values (?, ?, ?)");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 
-            header("location:index.php?page=info");
+            header("location:index.php?page=pages");
         }
     }
 
@@ -62,8 +61,6 @@ class Insert extends Connect{
             header("location:index.php?page=files");
         }
     }
-
-
 }
 
 class Select extends Connect{
@@ -129,34 +126,34 @@ class Select extends Connect{
         $STH = $DBH->prepare("SELECT * FROM articles WHERE ID = $id");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        return $result[0];
     }
 
-    function getInfo(){
+    function getPages(){
         $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
-        if($page != 'info'){
+        if($page != 'pages'){
             return;
         }
 
         $DBH = Connect::getDBH();
-        $STH = $DBH->prepare("SELECT * FROM info ORDER BY ID DESC");
+        $STH = $DBH->prepare("SELECT * FROM pages ORDER BY ID DESC");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
     }
 
-    function getEditInfo(){
+    function getEditPages(){
         $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
-        if($page != 'edit_info'){
+        if($page != 'edit_page'){
             return;
         }
 
         $id = isset($_GET['id']) ? $_GET['id'] : 0;
         $DBH = Connect::getDBH();
-        $STH = $DBH->prepare("SELECT * FROM info WHERE ID = $id");
+        $STH = $DBH->prepare("SELECT * FROM pages WHERE ID = $id");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        return $result[0];
     }
 
     function getFiles(){
@@ -182,7 +179,7 @@ class Select extends Connect{
         $STH = $DBH->prepare("SELECT * FROM main");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        return $result[0];
     }
 
     function getFeedBack(){
@@ -197,7 +194,6 @@ class Select extends Connect{
         $result = $STH->fetchAll();
         return $result;
     }
-
 }
 
 class Delete extends Connect{
@@ -225,17 +221,17 @@ class Delete extends Connect{
         }
     }
 
-    function deleteInfo(){
+    function deletePages(){
         $action = (!isset($_GET['action'])) ? "" : $_GET['action'];
-        if($action == "delete_info")
+        if($action == "delete_page")
         {
             $DBH = Connect::getDBH();
             $id = $_GET['id'];
 
-            $STH = $DBH->prepare("DELETE FROM info where ID = $id");
+            $STH = $DBH->prepare("DELETE FROM pages where ID = $id");
             $STH->execute();
 
-            header("location:index.php?page=info");
+            header("location:index.php?page=pages");
         }
     }
 
@@ -273,7 +269,6 @@ class Delete extends Connect{
             header("location:index.php?page=feedback");
         }
     }
-
 }
 
 class Update extends Connect{
@@ -354,9 +349,9 @@ class Update extends Connect{
         }
     }
 
-    function editInfo(){
+    function editPages(){
         $action = (!isset($_POST['action'])) ? "" : $_POST['action'];
-        if($action == "edit_info")
+        if($action == "edit_page")
         {
             $id = intval($_POST['id']);
             $header = $_POST['info_header'];
@@ -365,10 +360,10 @@ class Update extends Connect{
 
             $data = array($header, $description, $position);
             $DBH = Connect::getDBH();
-            $STH = $DBH->prepare("UPDATE info SET header=?, description=?, position=? WHERE ID=$id");
+            $STH = $DBH->prepare("UPDATE pages SET header=?, description=?, position=? WHERE ID=$id");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 
-            header('location:index.php?page=edit_info&id='.$id);
+            header('location:index.php?page=edit_page&id='.$id);
         }
     }
 
@@ -385,5 +380,4 @@ class Update extends Connect{
             header('location:index.php?page=main');
         }
     }
-
 }

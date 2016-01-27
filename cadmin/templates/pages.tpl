@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    information -- <small> <a href="?page=add_info">Add New</a> </small>
+                    information -- <small> <a href="?page=add_page">Add New</a> </small>
                 </h1>
             </div>
         </div>
@@ -24,14 +24,14 @@
                         </tr>
                         </thead>
                         <tbody>
-                        {foreach $info as $i}
+                        {foreach $pages as $p}
                             <tr>
-                                <td>{$i.header}</td>
-                                <td>{$i.description|truncate:50}</td>
-                                <td>{$i.position}</td>
+                                <td>{$p.header}</td>
+                                <td>{$p.description|truncate:50}</td>
+                                <td>{$p.position}</td>
                                 <td>
-                                    <a href="index.php?page=edit_info&id={$i.ID}"> <img src="../img/pencil.png"> </a>
-                                    <a onClick="return confirmDelete()" href="index.php?action=delete_info&id={$i.ID}"> <img src="../img/cross.png"> </a>
+                                    <a href="index.php?page=edit_page&id={$p.ID}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>
+                                    <a onClick="return confirmDelete()" href="index.php?action=delete_page&id={$p.ID}"> <i class="fa fa-times fa-lg fa-fw"></i> </a>
                                 </td>
                             </tr>
                         {/foreach}

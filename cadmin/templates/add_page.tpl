@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Add Info
+                    Add Page
                 </h1>
             </div>
         </div>
@@ -26,7 +26,7 @@
                         <label>Description</label>
                         <textarea class="form-control ckeditor" rows="3" name="info_desc"></textarea>
                     </div>
-                    <input type="hidden" name="action" value="add_info"/>
+                    <input type="hidden" name="action" value="add_pages"/>
                     <button type="submit" class="btn btn-default">Add</button>
                 </form>
             </div>
