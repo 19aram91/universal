@@ -1,11 +1,11 @@
 <?php
 require_once('config.php');
 
-class Select extends Connect
+class Select 
 {
 
     function getConfigs(){
-        $DBH = Connect::getDBH();
+        global $DBH;
         $STH = $DBH->prepare("SELECT * FROM configs");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
@@ -14,7 +14,7 @@ class Select extends Connect
 
     function getTopDreams()
     {
-        $DBH = Connect::getDBH();
+        global $DBH;
         $STH = $DBH->prepare("SELECT ID, header FROM articles ORDER BY watch_count desc limit 10");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
@@ -23,8 +23,8 @@ class Select extends Connect
 
     function getInfo()
     {
-        $DBH = Connect::getDBH();
-        $STH = $DBH->prepare("SELECT ID, header FROM info ORDER BY position");
+        global $DBH;
+        $STH = $DBH->prepare("SELECT ID, header FROM pages ORDER BY position");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
@@ -33,7 +33,7 @@ class Select extends Connect
 
     function getMainText()
     {
-        $DBH = Connect::getDBH();
+        global $DBH;
         $STH = $DBH->prepare("SELECT * FROM main");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
@@ -48,8 +48,8 @@ class Select extends Connect
         }
 
         $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
-        $DBH = Connect::getDBH();
-        $STH = $DBH->prepare("SELECT * FROM info where ID = $id");
+        global $DBH;
+        $STH = $DBH->prepare("SELECT * FROM pages where ID = $id");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
@@ -63,7 +63,7 @@ class Select extends Connect
         }
 
         $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
-        $DBH = Connect::getDBH();
+        global $DBH;
         $STH = $DBH->prepare("Update dreambook set watch_count = watch_count+1 where ID = $id");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
 
@@ -83,7 +83,7 @@ class Select extends Connect
 
         if(substr_count($id, 'is') > 1){
             $word = $_GET['id'];
-            $DBH = Connect::getDBH();
+            global $DBH;
             $STH = $DBH->prepare("SELECT ID, header FROM dreambook WHERE header LIKE ? ORDER BY header");
             $STH->execute(array('%'.$word.'%')) or die(print_r($STH->errorInfo(), true));
             $result = $STH->fetchAll();
@@ -91,7 +91,7 @@ class Select extends Connect
         }
         else{
             $letter = $_GET['id'];
-            $DBH = Connect::getDBH();
+            global $DBH;
             $STH = $DBH->prepare("SELECT ID, header FROM dreambook WHERE header LIKE ? ORDER BY header");
             $STH->execute(array($letter.'%')) or die(print_r($STH->errorInfo(), true));
             $result = $STH->fetchAll();
@@ -132,7 +132,7 @@ class Select extends Connect
             $description = htmlspecialchars(stripslashes(trim($_GET['desc'])));
 
             $data = array($name, $mail, $header, $description);
-            $DBH = Connect::getDBH();
+            global $DBH;
             $STH = $DBH->prepare("INSERT INTO feedback (fname, mail, header, description) values (?, ?, ?, ?)");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 

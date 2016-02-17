@@ -283,3 +283,7 @@ h5{
 .cutom-cb input[type=checkbox]:checked + label {
     left: 33px;
 }
+
+.disabled{
+    display: none;
+}

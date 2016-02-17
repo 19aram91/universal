@@ -1,10 +1,9 @@
 <div class="col-md-3 col-sm-12 advertisement">
-    здесь будет реклама !!!
+   Advertisement !!!
 </div>
 </div>
 <div class="row footer">
-    <span class="pull-left contact"><a href="{$root}/feedback/message"> Свяжитесь с нами </a></span>
-    <span class="copyright">&copy; 2015 {$conf.site_name} . все права защищены.</span>
+    <span class="copyright">&copy; {'Y'|date} {$conf.site_name} . All rights reserved.</span>
 </div>
 </div>
 

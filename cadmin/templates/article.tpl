@@ -6,23 +6,23 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Pages({$pages|count}) -- <small> <a href="#" onclick="$('.add-page').toggle('fast', 'linear')">Add Page</a> </small>
+                    {#article#} -- <small>total <b>{$articles|count}</b> items</small> -- <small> <a href="#" onclick="$('.add-article').toggle('fast', 'linear')">Add New</a> </small>
                 </h1>
             </div>
 
-            <div class="col-lg-12 add-page disabled" >
-                <form action="?page=pages&action=set" method="post" enctype="multipart/form-data" role="form">
+            <div class="col-lg-12 add-article disabled">
+                <form action="?page=article&action=set" method="post" enctype="multipart/form-data" role="form">
                     <div class="form-group">
                         <label>Header </label>
-                        <input class="form-control" name="info_header">
+                        <input class="form-control" name="article_header">
                     </div>
                     <div class="form-group">
-                        <label>Position </label>
-                        <input type="number" class="form-control" name="info_pos">
+                        <label>IMG</label>
+                        <input type="file" name="article_img">
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control ckeditor" rows="3" name="info_desc"></textarea>
+                        <textarea class="form-control ckeditor" rows="3" name="article_desc"></textarea>
                     </div>
                     <button type="submit" class="btn btn-default">Add</button>
                 </form>
@@ -32,22 +32,23 @@
         {if isset($smarty.get.action) && $smarty.get.action == "editItem"}
         <div class="row">
             <div class="col-lg-12">
-                <a href="?page=pages">Back</a>
-                <form action="?page=pages&action=edit" method="post" role="form">
+                <a href="?page=article">Back</a>
+                <form action="?page=article&action=edit" method="post" enctype="multipart/form-data" role="form">
                     <div class="form-group">
                         <label>Header </label>
-                        <input class="form-control" name="info_header" value="{$pageInfo.header}">
+                        <input class="form-control" name="article_header" value="{$article.header}">
                     </div>
                     <div class="form-group">
-                        <label>Position </label>
-                        <input type="number" class="form-control" name="info_pos" value="{$pageInfo.position}">
+                        <img src="../img/articles/{$article.img}" height="60" width="60">
+                        <label>IMG</label>
+                        <input type="file" name="article_img">
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control ckeditor" rows="3" name="info_desc">{$pageInfo.description}</textarea>
+                        <textarea class="form-control ckeditor" rows="3"
+                                  name="article_desc">{$article.description}</textarea>
                     </div>
-
-                    <input type="hidden" name="id" value="{$pageInfo.ID}"/>
+                    <input type="hidden" name="id" value="{$article.ID}"/>
                     <button type="submit" class="btn btn-default">Edit</button>
                 </form>
             </div>
@@ -62,19 +63,19 @@
                         <tr>
                             <th>Header</th>
                             <th>Description</th>
-                            <th>Position</th>
+                            <th>Count</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {foreach $pages as $p}
+                        {foreach $articles as $a}
                             <tr>
-                                <td>{$p.header}</td>
-                                <td>{$p.description|truncate:50}</td>
-                                <td>{$p.position}</td>
+                                <td>{$a.header}</td>
+                                <td>{$a.description|truncate:50}</td>
+                                <td>{$a.watch_count}</td>
                                 <td>
-                                    <a href="?page=pages&action=editItem&id={$p.ID}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>
-                                    <a onClick="return confirmDelete()" href="?page=pages&action=delete&id={$p.ID}"> <i class="fa fa-times fa-lg fa-fw"></i> </a>
+                                    <a href="?page=article&action=editItem&id={$a.ID}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>
+                                    <a onClick="return confirmDelete()" href="?page=article&action=delete&id={$a.ID}"><i class="fa fa-times fa-lg fa-fw"></i></a>
                                 </td>
                             </tr>
                         {/foreach}
@@ -84,10 +85,8 @@
             </div>
         </div>
     </div>
-    <!-- /.row -->
 
 </div>
-<!-- /.container-fluid -->
 
 </div>
 

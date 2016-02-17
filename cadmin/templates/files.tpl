@@ -10,12 +10,11 @@
 
         <div class="row">
             <div class="col-lg-3">
-                <form action="index.php" method="post" enctype="multipart/form-data" role="form">
+                <form action="?page=files&action=add" method="post" enctype="multipart/form-data" role="form">
                     <div class="form-group">
                         <label>Add File</label>
                         <input type="file" name="img">
                     </div>
-                    <input type="hidden" name="action" value="add_file">
                     <button type="submit" class="btn btn-default">Add</button>
                 </form>
             </div>
@@ -44,7 +43,7 @@
                                 <td>{$root}/img/files/{$f.src}</td>
                                 <td><img height=40" width="40" src="../img/files/{$f.src}"></td>
                                 <td>
-                                    <a onClick="return confirmDelete()" href="index.php?action=delete_file&id={$f.ID}">
+                                    <a onClick="return confirmDelete()" href="?page=files&action=delete&id={$f.ID}">
                                         <i class="fa fa-times fa-lg fa-fw"></i> </a>
                                 </td>
                             </tr>

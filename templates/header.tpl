@@ -22,58 +22,42 @@
         <div class="col-md-6 col-sm-6 col-xs-12 logo">
             {$slogan_bool = ($conf.slogan_show == 0) ? false : true}
             <div class="logo-head"><a href="{$root}"> {$conf.site_name} </a></div>
-            {if $slogan_bool} <div class="logo-slog">{$conf.slogan_name}</div> {/if}
+            {if $slogan_bool}
+                <div class="logo-slog">{$conf.slogan_name}</div>
+            {/if}
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="searchbox">
-                <input id="search-text" placeholder="что вам снилось?"/>
-                <button id="word-search" class="searchbtn">Искать!</button>
+                <input id="search-text" placeholder="Search..."/>
             </div>
         </div>
     </div>
     <div class="row letter-nav" id="alfavit">
-        <p class="text-center">
-            <span class="letter">А</span>
-        </p>
-    </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
 
-    <div class="row content">
-        <div class="col-md-2 col-sm-12 additional">
-            <div class="navs">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <label>Top 10 запрашиваемые сны</label>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resp-nav">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="resp-nav">
-                        <ul class="nav navbar-nav">
-                            {foreach $top_dream_list as $tdl}
-                                <li><a href="{$root}/dream/{$tdl.ID}"> {$tdl.header} </a></li>
-                            {/foreach}
-                        </ul>
-                    </div>
-                </nav>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-                <nav class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <label>Интересные факты</label>
-                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="?">HOME</a></li>
                         {foreach $info_list as $il}
                             <li><a href="{$root}/info/{$il.ID}"> {$il.header} </a></li>
                         {/foreach}
+                        <li><a href="{$root}/feedback/message"> Feedback </a></li>
                     </ul>
-                </nav>
-                <hr />
-                <nav class="navbar navbar-default">
-                    <ul class="nav navbar-nav">
-                            <li><a href="{$root}/horoscope/1"> Ежедневный гороскоп </a></li>
-                    </ul>
-                </nav>
+                </div>
+
             </div>
-        </div>
+        </nav>
+    </div>
+
+    <div class="row content">

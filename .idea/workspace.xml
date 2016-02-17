@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="425fca7d-451e-4851-b363-78218e96b8eb" name="Default" comment="" />
+=======
     <list default="true" id="425fca7d-451e-4851-b363-78218e96b8eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadmin/templates/main.tpl" afterPath="$PROJECT_DIR$/cadmin/templates/main.tpl" />
     </list>
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
     <ignored path="universal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -26,8 +30,141 @@
     <favorites_list name="universal" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
+=======
+<<<<<<< HEAD
+    <leaf>
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
+=======
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1411">
+              <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="-3.8545454">
+              <caret line="46" column="86" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+            <state vertical-scroll-proportion="-17.076923">
+              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+=======
+      <file leaf-file-name="configs.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/configs.tpl">
+=======
+      <file leaf-file-name="main.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/main.tpl">
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.273878">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/pages.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_page.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/edit_page.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="92" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_page.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/add_page.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_functions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/admin_functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.11724138">
+              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/feedback.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="dream.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/dream.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+=======
+      <file leaf-file-name="footer.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/footer.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="612">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+              <folding />
+=======
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
         <entry file="file://$PROJECT_DIR$/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.086419754">
@@ -60,10 +197,181 @@
                 <marker date="1453908410371" expanded="true" signature="12094:12144" placeholder="UPDATE info " />
                 <marker date="1453908410371" expanded="true" signature="12570:12599" placeholder="UPDATE main " />
               </folding>
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dreambook (2).sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dreambook (2).sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.3960216">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/header.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+=======
+      <file leaf-file-name="configs.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/configs.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46896553" vertical-offset="102" max-vertical-offset="1122">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.090909">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="11" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/templates/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="47" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="47" />
+=======
+      <file leaf-file-name="edit_article.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/edit_article.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="33" />
+=======
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+      <file leaf-file-name="files.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/files.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+              <folding>
+                <element signature="n#Insert#0;n#!!top" expanded="false" />
+                <element signature="n#setDream#0;n#Insert#0;n#!!top" expanded="false" />
+                <element signature="e#173#937#0#PHP" expanded="false" />
+                <element signature="e#723#869#0#PHP" expanded="false" />
+                <element signature="n#setInfo#0;n#Insert#0;n#!!top" expanded="false" />
+                <element signature="e#1047#1560#0#PHP" expanded="false" />
+                <element signature="n#addFile#0;n#Insert#0;n#!!top" expanded="false" />
+                <element signature="e#1670#2221#0#PHP" expanded="false" />
+                <element signature="e#2027#2157#0#PHP" expanded="false" />
+                <element signature="e#2369#2844#0#PHP" expanded="false" />
+                <element signature="e#2480#2675#0#PHP" expanded="false" />
+                <element signature="e#2956#3085#0#PHP" expanded="false" />
+                <element signature="e#3571#3626#0#PHP" expanded="false" />
+                <element signature="n#getEditDreams#0;n#Select#0;n#!!top" expanded="false" />
+                <element signature="e#3968#4024#0#PHP" expanded="false" />
+                <element signature="n#getInfo#0;n#Select#0;n#!!top" expanded="false" />
+                <element signature="e#4410#4460#0#PHP" expanded="false" />
+                <element signature="n#getEditInfo#0;n#Select#0;n#!!top" expanded="false" />
+                <element signature="e#4795#4850#0#PHP" expanded="false" />
+                <element signature="n#getFiles#0;n#Select#0;n#!!top" expanded="false" />
+                <element signature="e#5232#5283#0#PHP" expanded="false" />
+                <element signature="n#getMain#0;n#Select#0;n#!!top" expanded="false" />
+                <element signature="e#5615#5665#0#PHP" expanded="false" />
+                <element signature="n#getFeedBack#0;n#Select#0;n#!!top" expanded="false" />
+                <element signature="e#5983#6037#0#PHP" expanded="false" />
+                <element signature="n#deleteDream#0;n#Delete#0;n#!!top" expanded="false" />
+                <element signature="e#6416#7034#0#PHP" expanded="false" />
+                <element signature="e#6722#6862#0#PHP" expanded="false" />
+                <element signature="n#deleteInfo#0;n#Delete#0;n#!!top" expanded="false" />
+                <element signature="e#7145#7414#0#PHP" expanded="false" />
+                <element signature="n#deleteFile#0;n#Delete#0;n#!!top" expanded="false" />
+                <element signature="e#7525#8055#0#PHP" expanded="false" />
+                <element signature="n#deleteFeedBack#0;n#Delete#0;n#!!top" expanded="false" />
+                <element signature="e#8170#8451#0#PHP" expanded="false" />
+=======
+      <file leaf-file-name="login.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/login.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="21" column="57" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+              </folding>
+=======
+      <file leaf-file-name="articles.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cadmin/templates/articles.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.423077">
+              <caret line="33" column="157" selection-start-line="33" selection-start-column="122" selection-end-line="33" selection-end-column="157" />
+              <folding />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+=======
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -108,10 +416,19 @@
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+<<<<<<< HEAD
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+=======
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
   <component name="PhpServers">
     <servers />
   </component>
@@ -119,8 +436,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -148,6 +465,10 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,7 +522,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../new_client" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../newMonit" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -244,12 +581,15 @@
       <envs />
       <method />
     </configuration>
+<<<<<<< HEAD
+=======
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
       <envs />
       <method />
     </configuration>
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -265,9 +605,61 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+<<<<<<< HEAD
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+<<<<<<< HEAD
+    <editor active="false" />
+=======
+    <editor active="true" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
     <layout>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16178624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24756756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1652452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3300866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14978679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -288,6 +680,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -308,24 +701,204 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/vocab.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/templates/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="204">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/feedback.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="901">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dream.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1955">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+    <entry file="file://$PROJECT_DIR$/templates/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+=======
+    <entry file="file://$PROJECT_DIR$/templates/info.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02021403">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="8" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+        </state>
+      </provider>
+    </entry>
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
     <entry file="file://$PROJECT_DIR$/templates/results.tpl">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="306">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+        <state vertical-scroll-proportion="0.0">
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="47" />
+=======
         <state vertical-scroll-proportion="-3.9230769">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Knarik-jquery-mg-slider.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="799">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+        <state vertical-scroll-proportion="0.0">
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="33" />
+=======
         <state vertical-scroll-proportion="0.4730195">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins/colorPicker/css/bootstrap-colorpicker.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2856">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+          <folding>
+            <element signature="n#Insert#0;n#!!top" expanded="false" />
+            <element signature="n#setDream#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#173#937#0#PHP" expanded="false" />
+            <element signature="e#723#869#0#PHP" expanded="false" />
+            <element signature="n#setInfo#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#1047#1560#0#PHP" expanded="false" />
+            <element signature="n#addFile#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#1670#2221#0#PHP" expanded="false" />
+            <element signature="e#2027#2157#0#PHP" expanded="false" />
+            <element signature="e#2369#2844#0#PHP" expanded="false" />
+            <element signature="e#2480#2675#0#PHP" expanded="false" />
+            <element signature="e#2956#3085#0#PHP" expanded="false" />
+            <element signature="e#3449#3504#0#PHP" expanded="false" />
+            <element signature="n#getEditDreams#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#3846#3902#0#PHP" expanded="false" />
+            <element signature="n#getInfo#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#4288#4338#0#PHP" expanded="false" />
+            <element signature="n#getEditInfo#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#4673#4728#0#PHP" expanded="false" />
+            <element signature="n#getFiles#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5110#5161#0#PHP" expanded="false" />
+            <element signature="n#getMain#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5493#5543#0#PHP" expanded="false" />
+            <element signature="n#getFeedBack#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5861#5915#0#PHP" expanded="false" />
+            <element signature="n#Delete#0;n#!!top" expanded="false" />
+            <element signature="n#deleteDream#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#6294#6912#0#PHP" expanded="false" />
+            <element signature="e#6600#6740#0#PHP" expanded="false" />
+            <element signature="n#deleteInfo#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#7023#7292#0#PHP" expanded="false" />
+            <element signature="n#deleteFile#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#7403#7933#0#PHP" expanded="false" />
+            <element signature="n#deleteFeedBack#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#8048#8329#0#PHP" expanded="false" />
+            <marker date="1451476772599" expanded="true" signature="566:631" placeholder="INSERT INTO dreambook... " />
+            <marker date="1451476772599" expanded="true" signature="1354:1419" placeholder="INSERT INTO info... " />
+            <marker date="1451476772599" expanded="true" signature="1895:1929" placeholder="INSERT INTO files... " />
+            <marker date="1451476772599" expanded="true" signature="3184:3205" placeholder="SELECT * FRO... configs" />
+            <marker date="1451476772599" expanded="true" signature="3570:3610" placeholder="SELECT * FRO... dreambook" />
+            <marker date="1451476772599" expanded="true" signature="4020:4055" placeholder="SELECT * FRO... dreambook" />
+            <marker date="1451476772599" expanded="true" signature="4404:4439" placeholder="SELECT * FRO... info" />
+            <marker date="1451476772599" expanded="true" signature="4846:4876" placeholder="SELECT * FRO... info" />
+            <marker date="1451476772599" expanded="true" signature="5227:5263" placeholder="SELECT * FRO... files" />
+            <marker date="1451476772599" expanded="true" signature="5609:5627" placeholder="SELECT * FRO... main" />
+            <marker date="1451476772599" expanded="true" signature="5981:6020" placeholder="SELECT * FRO... feedback" />
+            <marker date="1451476772599" expanded="true" signature="6438:6471" placeholder="SELECT * FRO... dreambook" />
+            <marker date="1451476772599" expanded="true" signature="6776:6809" placeholder="DELETE FROM " />
+            <marker date="1451476772599" expanded="true" signature="7166:7194" placeholder="DELETE FROM " />
+            <marker date="1451476772599" expanded="true" signature="7546:7575" placeholder="SELECT * FRO... files" />
+            <marker date="1451476772599" expanded="true" signature="7805:7834" placeholder="DELETE FROM " />
+            <marker date="1451476772599" expanded="true" signature="8195:8227" placeholder="DELETE FROM " />
+            <marker date="1451476772599" expanded="true" signature="9245:9305" placeholder="UPDATE confi... " />
+            <marker date="1451476772599" expanded="true" signature="9245:9445" placeholder="UPDATE confi... " />
+            <marker date="1451476772599" expanded="true" signature="10475:10529" placeholder="UPDATE dream... " />
+            <marker date="1451476772599" expanded="true" signature="10843:10876" placeholder="SELECT * FRO... dreambook" />
+            <marker date="1451476772599" expanded="true" signature="11248:11286" placeholder="UPDATE dream... " />
+            <marker date="1451476772599" expanded="true" signature="12040:12101" placeholder="UPDATE info " />
+            <marker date="1451476772599" expanded="true" signature="12527:12556" placeholder="UPDATE main " />
+          </folding>
+=======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
         </state>
       </provider>
     </entry>
@@ -462,14 +1035,25 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/config.php">
+=======
     <entry file="file://$PROJECT_DIR$/css/font-awesome/less/icons.less">
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+    <entry file="file://$PROJECT_DIR$/templates/404.tpl">
+=======
     <entry file="file://$PROJECT_DIR$/css/font-awesome/less/path.less">
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -499,91 +1083,330 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/font-awesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.17566016">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.4730195">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/fonts/glyphicons-halflings-regular.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/fonts/glyphicons-halflings-regular.eot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4368715">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.11710677">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cadmin/templates/configs.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20828539">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/user.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+=======
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/fonts/glyphicons-halflings-regular.eot">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-11.923077">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+<<<<<<< HEAD
+=======
+=======
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="33" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.4730195" vertical-offset="166" max-vertical-offset="2261">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="47" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/cadmin/templates/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.26923">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configs/vocab.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+    <entry file="file://$PROJECT_DIR$/templates/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.058553386">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+=======
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.16073479">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+        <state vertical-scroll-proportion="0.4368715">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/configs.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+          <folding>
+            <element signature="n#Insert#0;n#!!top" expanded="false" />
+            <element signature="n#setDream#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#173#937#0#PHP" expanded="false" />
+            <element signature="e#723#869#0#PHP" expanded="false" />
+            <element signature="n#setInfo#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#1047#1560#0#PHP" expanded="false" />
+            <element signature="n#addFile#0;n#Insert#0;n#!!top" expanded="false" />
+            <element signature="e#1670#2221#0#PHP" expanded="false" />
+            <element signature="e#2027#2157#0#PHP" expanded="false" />
+            <element signature="e#2369#2844#0#PHP" expanded="false" />
+            <element signature="e#2480#2675#0#PHP" expanded="false" />
+            <element signature="e#2956#3085#0#PHP" expanded="false" />
+            <element signature="e#3571#3626#0#PHP" expanded="false" />
+            <element signature="n#getEditDreams#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#3968#4024#0#PHP" expanded="false" />
+            <element signature="n#getInfo#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#4410#4460#0#PHP" expanded="false" />
+            <element signature="n#getEditInfo#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#4795#4850#0#PHP" expanded="false" />
+            <element signature="n#getFiles#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5232#5283#0#PHP" expanded="false" />
+            <element signature="n#getMain#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5615#5665#0#PHP" expanded="false" />
+            <element signature="n#getFeedBack#0;n#Select#0;n#!!top" expanded="false" />
+            <element signature="e#5983#6037#0#PHP" expanded="false" />
+            <element signature="n#deleteDream#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#6416#7034#0#PHP" expanded="false" />
+            <element signature="e#6722#6862#0#PHP" expanded="false" />
+            <element signature="n#deleteInfo#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#7145#7414#0#PHP" expanded="false" />
+            <element signature="n#deleteFile#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#7525#8055#0#PHP" expanded="false" />
+            <element signature="n#deleteFeedBack#0;n#Delete#0;n#!!top" expanded="false" />
+            <element signature="e#8170#8451#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="33" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.039035592">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+=======
+        <state vertical-scroll-proportion="0.20828539">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="52" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.11371238">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <marker date="1452358440520" expanded="true" signature="158:179" placeholder="SELECT * FRO... configs" />
+            <marker date="1452358440520" expanded="true" signature="416:482" placeholder="SELECT ID, h... dreambook" />
+            <marker date="1452358440520" expanded="true" signature="712:757" placeholder="SELECT ID, h... info" />
+            <marker date="1452358440520" expanded="true" signature="992:1010" placeholder="SELECT * FRO... main" />
+            <marker date="1452358440520" expanded="true" signature="1426:1456" placeholder="SELECT * FRO... info" />
+            <marker date="1452358440520" expanded="true" signature="1877:1937" placeholder="Update dream... " />
+            <marker date="1452358440520" expanded="true" signature="2041:2076" placeholder="SELECT * FRO... dreambook" />
+            <marker date="1452358440520" expanded="true" signature="2546:2614" placeholder="SELECT ID, h... dreambook" />
+            <marker date="1452358440520" expanded="true" signature="2907:2975" placeholder="SELECT ID, h... dreambook" />
+            <marker date="1452358440520" expanded="true" signature="4350:4425" placeholder="INSERT INTO feedback... " />
+          </folding>
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="47" />
+=======
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="39" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+<<<<<<< HEAD
+=======
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+          <folding />
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+=======
+        <state vertical-scroll-proportion="0.058553386" vertical-offset="0" max-vertical-offset="871">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+        <state vertical-scroll-proportion="-9.688506">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+=======
+        <state vertical-scroll-proportion="-26.26923">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/vocab.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="238" column="21" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+<<<<<<< HEAD
+=======
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+          <folding />
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cadmin/templates/articles.tpl">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+=======
+        <state vertical-scroll-proportion="0.16073479" vertical-offset="30" max-vertical-offset="901">
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
         <state vertical-scroll-proportion="-19.423077">
           <caret line="33" column="157" selection-start-line="33" selection-start-column="122" selection-end-line="33" selection-end-column="157" />
+<<<<<<< HEAD
+=======
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+          <folding />
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
@@ -600,13 +1423,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+=======
+        <state vertical-scroll-proportion="0.039035592" vertical-offset="0" max-vertical-offset="871">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+=======
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+=======
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cadmin/templates/add_page.tpl">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+=======
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-3.8545454">
+          <caret line="46" column="86" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+          <folding />
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
         </state>
       </provider>
     </entry>
@@ -647,6 +1503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cadmin/templates/edit_article.tpl">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.4695052">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
         </state>
@@ -656,9 +1513,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.019562716">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.46896553" vertical-offset="102" max-vertical-offset="1122">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+>>>>>>> 28b8cbe6eb07c589297f34cc1daa6ce2005713fe
+=======
+        <state vertical-scroll-proportion="-16.461538">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+        <state vertical-scroll-proportion="-17.076923">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dreambook (2).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3960216">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
     <entry file="file://$PROJECT_DIR$/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.086419754">
@@ -694,5 +1581,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/cadmin/templates/main.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+>>>>>>> 933b32dd51096b5ffecd7a0d9e2f69f849d4c725
+=======
+        <state vertical-scroll-proportion="0.273878">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+>>>>>>> 65b2b8f0bec4a2eab89e542e81bbdf7977b6bd12
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> b47bd07f5602e392fbbf6d62134d1dee878f2eaf
   </component>
 </project>

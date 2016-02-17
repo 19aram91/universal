@@ -32,7 +32,7 @@
                                 <td>{$f.header}</td>
                                 <td>{$f.description}</td>
                                 <td>
-                                    <a onClick="return confirmDelete()" href="index.php?action=delete_feedback&id={$f.ID}"> <img src="../img/cross.png"> </a>
+                                    <a onClick="return confirmDelete()" href="?page=feedback&action=delete&id={$f.ID}"><i class="fa fa-times fa-lg fa-fw"></i></a>
                                 </td>
                             </tr>
                         {/foreach}

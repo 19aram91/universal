@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{$configs.site_name}'s Admin Page</title>
+    <title>Easy CMS</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" href="img/favicon.ico">
@@ -19,7 +19,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h5 class="text-center">
-                        {$configs.site_name}'s Admin Page</h5>
+                        Easy CMS</h5>
                     <form class="form form-signup" role="form">
                         <div class="form-group">
                             <div class="input-group">
@@ -60,8 +60,8 @@
 
             $.ajax({
                 type: "POST",
-                url: "index.php",
-                data: {'action': 'login', 'user': user, 'pass': pass}
+                url: "?page=login&action=set",
+                data: {'user': user, 'pass': pass}
             }).done(function(response){
                 var resp = JSON.parse(response);
                 if(resp.error){

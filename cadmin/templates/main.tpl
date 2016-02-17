@@ -11,11 +11,11 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <form action="index.php" method="post" enctype="multipart/form-data" role="form">
+                <form action="?page=main&action=edit" method="post" enctype="multipart/form-data" role="form">
                     <div class="form-group">
                         <textarea class="form-control ckeditor" name="main_text">{$main_text.description}</textarea>
                     </div>
-                    <input type="hidden" name="action" value="edit_main"/>
+
                     <button type="submit" class="btn btn-default">Edit</button>
                 </form>
             </div>

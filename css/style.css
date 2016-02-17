@@ -1,13 +1,5 @@
-/*body{*/
-    /*background-image: url("../img/galaxy.jpg");*/
-    /*background-size: 100% 100%;*/
-    /*background-attachment: fixed;*/
-/*}*/
-
 .header {
     height: 105px;
-    /*background-color: rgb(49, 17, 87);*/
-    opacity: .9;
 }
 
 .logo{
@@ -212,6 +204,14 @@
 #msg-success{
     color:green;
     font-weight: bold;
+}
+
+.main img{
+    max-width: 100%;
+    height: auto!important;
+    float: left;
+    margin: 5px 20px 5px 0!important;
+    border: none!important;
 }
 
 @media screen and (max-width: 768px) {

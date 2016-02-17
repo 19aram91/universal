@@ -1,4 +1,4 @@
-<div class="col-md-7 col-sm-12 main">
+<div class="col-md-9 col-sm-12 main">
     <div class="feedback">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2">
