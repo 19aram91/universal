@@ -15,7 +15,7 @@ class Select extends Connect
     function getTopDreams()
     {
         $DBH = Connect::getDBH();
-        $STH = $DBH->prepare("SELECT ID, header FROM dreambook ORDER BY watch_count desc limit 10");
+        $STH = $DBH->prepare("SELECT ID, header FROM articles ORDER BY watch_count desc limit 10");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;

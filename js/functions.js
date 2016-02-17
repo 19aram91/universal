@@ -1,12 +1,7 @@
 var root = window.location.origin;
 
 function confirmDelete() {
-    if (confirm("Are you sure to delete?")) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return confirm("Are you sure to delete?");
 }
 
 function isValidEmailAddress(emailAddress) {
