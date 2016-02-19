@@ -4,6 +4,6 @@ RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 
-ErrorDocument 404 http://127.0.0.3/404/not-found
+ErrorDocument 404 http://127.7.7.7/404/not-found
 
 RewriteRule ^([^/]*)/([^/]*)$ /index.php?page=$1&id=$2 [L]

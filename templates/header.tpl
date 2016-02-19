@@ -48,9 +48,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="?">HOME</a></li>
-                        {foreach $info_list as $il}
-                            <li><a href="{$root}/info/{$il.ID}"> {$il.header} </a></li>
+                        <li class="active"><a href="{$root}">HOME</a></li>
+                        {foreach $page_list as $pl}
+                            <li><a href="{$root}/main/{$pl.header}"> {$pl.header} </a></li>
                         {/foreach}
                         <li><a href="{$root}/feedback/message"> Feedback </a></li>
                     </ul>

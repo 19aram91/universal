@@ -21,7 +21,7 @@ class Select
         return $result;
     }
 
-    function getInfo()
+    function getPages()
     {
         global $DBH;
         $STH = $DBH->prepare("SELECT ID, header FROM pages ORDER BY position");
@@ -43,14 +43,14 @@ class Select
     function getInfoText()
     {
         $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
-        if($page != 'info'){
+        if($page != 'main'){
             return;
         }
 
-        $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+        $header = $_GET['id'];
         global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM pages where ID = $id");
-        $STH->execute() or die(print_r($STH->errorInfo(), true));
+        $STH = $DBH->prepare("SELECT * FROM pages where header = ?");
+        $STH->execute(array($header)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
     }

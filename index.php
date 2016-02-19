@@ -17,8 +17,8 @@ $smarty->assign('date', $date);
 $conf = $select->getConfigs();
 $smarty->assign('conf', $conf);
 
-$info_list = $select->getInfo();
-$smarty->assign('info_list', $info_list);
+$page_list = $select->getPages();
+$smarty->assign('page_list', $page_list);
 
 $top_dream_list = $select->getTopDreams();
 $smarty->assign('top_dream_list', $top_dream_list);
