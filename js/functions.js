@@ -33,10 +33,6 @@ $('#word-search').click(function () {
     window.location = root+'/results/' + query;
 });
 
-$('#alfavit .letter').click(function () {
-    var letter = $(this).html();
-    window.location = root+'/results/'+letter;
-});
 
 $('#send-msg').click(function () {
     $('#msg-error').html('');
@@ -49,26 +45,26 @@ $('#send-msg').click(function () {
     var error = '';
 
     if (!name) {
-        error += 'Введите ваше имя <br>';
+        error += 'Enter your name <br>';
     }
     if (!mail) {
         error += 'Введите ваш e-mail адрес <br>';
     } else if (!isValidEmailAddress(mail)) {
-        error += 'Введите правильный e-mail адрес <br>';
+        error += 'Enter your e-mail address <br>';
     }
     if (!header) {
-        error += 'Введите заголовок <br>';
+        error += 'Enter a title <br>';
     }
     if (!desc) {
-        error += 'Введите сообщение <br>';
+        error += 'Enter your message <br>';
     }
     if (!captcha) {
-        error += 'Введите текст с картинки <br>';
+        error += 'Enter the text from the captcha <br>';
     } else if (!checkCaptcha(captcha)) {
-        error += 'Введите правильный текст с картинки <br>';
+        error += 'Enter the correct text from the captcha <br>';
     }
 
-    if (error != '') {
+    if (error) {
         $('#msg-error').html(error);
         return false;
     }

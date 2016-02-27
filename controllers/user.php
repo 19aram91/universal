@@ -12,10 +12,10 @@ class Select
         return $result[0];
     }
 
-    function getTopDreams()
+    function getLastArticles()
     {
         global $DBH;
-        $STH = $DBH->prepare("SELECT ID, header FROM articles ORDER BY watch_count desc limit 10");
+        $STH = $DBH->prepare("SELECT ID, header FROM articles ORDER BY ID desc limit 5");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
@@ -40,7 +40,7 @@ class Select
         return $result;
     }
 
-    function getInfoText()
+    function getPageText()
     {
         $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
         if($page != 'main'){
@@ -52,7 +52,7 @@ class Select
         $STH = $DBH->prepare("SELECT * FROM pages where header = ?");
         $STH->execute(array($header)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        return $result[0];
     }
 
     function getDreamText()
