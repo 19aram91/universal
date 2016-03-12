@@ -27,11 +27,17 @@
                     <div class="form-group">
                         {$slogan_bool = ($configs.slogan_show == 0) ? false : true}
                         <label>slogan</label>
+
                         <div class="cutom-cb">
                             <input type="checkbox" value="1" id="slideThree"
                                    name="slogan_show" {if $slogan_bool} checked {/if}/>
                             <label for="slideThree"></label>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Favicon </label>
+                        <img src="../img/favicon.ico" />
+                        <input type="file" name="favicon">
                     </div>
                     <div class="form-group">
                         <label>Keywords </label>

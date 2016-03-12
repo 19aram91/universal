@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="searchbox">
-                <input id="search-text" placeholder="Search..."/>
+                <input id="search-text" placeholder="{#search#}..."/>
             </div>
         </div>
     </div>
@@ -48,11 +48,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{$root}">HOME</a></li>
+                        <li class="active"><a href="{$root}">{#home#}</a></li>
                         {foreach $page_list as $pl}
                             <li><a href="{$root}/main/{$pl.header}"> {$pl.header} </a></li>
                         {/foreach}
-                        <li><a href="{$root}/feedback/message"> Feedback </a></li>
+                        <li><a href="{$root}/feedback/message"> {#feedback#} </a></li>
                     </ul>
                 </div>
 

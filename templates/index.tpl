@@ -1,4 +1,4 @@
-{config_load file="../configs/vocab.conf" section="user"}
+{config_load file="../configs/vocab.conf" section="user_am"}
 {$page =(isset($smarty.get.page)) ? $smarty.get.page : 'home'}
 
 {include file='header.tpl'}

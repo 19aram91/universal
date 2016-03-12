@@ -45,7 +45,7 @@ $('#send-msg').click(function () {
     var error = '';
 
     if (!name) {
-        error += 'Enter your name <br>';
+        error += '{#nameError#} <br>';
     }
     if (!mail) {
         error += 'Введите ваш e-mail адрес <br>';

@@ -30,6 +30,10 @@ class ConfigsCtrl extends Controller{
         $STH = $DBH->prepare("UPDATE configs SET site_name=?, slogan_name=?, slogan_show=?, keywords=?, description=?, site_title=?");
         $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 
+        if(isset($_FILES['favicon'])){
+            move_uploaded_file($_FILES['favicon']['tmp_name'], "../img/favicon.ico");
+        }
+
         $this->redirect('?page=configs');
     }
 

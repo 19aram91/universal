@@ -61,7 +61,6 @@
                         <thead>
                         <tr>
                             <th>Header</th>
-                            <th>Description</th>
                             <th>Position</th>
                             <th>Actions</th>
                         </tr>
@@ -70,7 +69,6 @@
                         {foreach $pages as $p}
                             <tr>
                                 <td>{$p.header}</td>
-                                <td>{$p.description|truncate:50}</td>
                                 <td>{$p.position}</td>
                                 <td>
                                     <a href="?page=pages&action=editItem&id={$p.ID}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>

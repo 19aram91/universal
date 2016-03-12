@@ -75,7 +75,7 @@
 }
 
 .letter-nav{
-    /*background: rgb(20, 3, 32);*/
+    background-color: #42BDCC;
     opacity: .96;
     color: #D1B7E4;
 }
@@ -133,7 +133,7 @@
 }
 
 .navbar-nav>li>a{
-    color: #D6C7E2 !important;
+    color: #13041E  !important;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -238,4 +238,9 @@
     .main iframe{
         width: 100% !important;
     }
+}
+
+#googleMap{
+    height: 300px;
+    width: 100%;
 }

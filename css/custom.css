@@ -1,6 +1,5 @@
-body {background-color: #1919ba ;}
-                .header {background-color: #c93684 ;}
-                .footer {background-color: #c93684 ;}
-                .content {background-color: #313157 ; color: #e0ce2b;}
-                .main {background-color: #344554 ;}
-.letter-nav{background-color: #0a001f;}
+body {background-color: #eeeeee ;}
+                .header {background-color: #222222 ;}
+                .footer {background-color: #222222 ;}
+                .content {background-color: #42bdcc ; color: #1a1918;}
+                .main, .letter-nav {background-color: #ffffff ;}

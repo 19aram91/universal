@@ -66,6 +66,7 @@
                 <li {if $page=="article"}class="active" {/if}><a href="?page=article"><i class="fa fa-fw fa-star"></i> {#article#}</a></li>
                 <li {if $page=="pages"}class="active" {/if}><a href="?page=pages"><i class="fa fa-fw fa-info"></i> {#pages#}</a></li>
                 <li {if $page=="main"}class="active" {/if}><a href="?page=main"><i class="fa fa-fw fa-desktop"></i> {#main#}</a></li>
+                <li {if $page=="fb_conf"}class="active" {/if}><a href="?page=fb_conf"><i class="fa fa-fw fa-desktop"></i> {#feedback#}</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

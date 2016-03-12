@@ -55,22 +55,36 @@ class Select
         return $result[0];
     }
 
-    function getDreamText()
+    function getArticleText()
     {
         $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
-        if($page != 'dream'){
+        if($page != 'article'){
             return;
         }
 
-        $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+        $id = $_GET['id'];
+        $params = array($id);
         global $DBH;
-        $STH = $DBH->prepare("Update dreambook set watch_count = watch_count+1 where ID = $id");
-        $STH->execute() or die(print_r($STH->errorInfo(), true));
+        $STH = $DBH->prepare("Update articles set watch_count = watch_count+1 where header = ?");
+        $STH->execute($params) or die(print_r($STH->errorInfo(), true));
 
-        $STH = $DBH->prepare("SELECT * FROM dreambook where ID = $id");
+        $STH = $DBH->prepare("SELECT * FROM articles where header = ?");
+        $STH->execute($params) or die(print_r($STH->errorInfo(), true));
+        $result = $STH->fetchAll();
+        return $result[0];
+    }
+
+    function getFbConfig()
+    {
+        $page = (!isset($_GET['page'])) ? "" : $_GET['page'];
+        if($page != 'feedback'){
+            return;
+        }
+        global $DBH;
+        $STH = $DBH->prepare("SELECT * FROM fb_config");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        return $result[0];
     }
 
     function getResults()

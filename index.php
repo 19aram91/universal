@@ -17,11 +17,14 @@ $smarty->assign('date', $date);
 $conf = $select->getConfigs();
 $smarty->assign('conf', $conf);
 
+$fb_conf = $select->getFbConfig();
+$smarty->assign('fb_conf', $fb_conf);
+
 $page_list = $select->getPages();
 $smarty->assign('page_list', $page_list);
 
-$top_dream_list = $select->getTopDreams();
-$smarty->assign('top_dream_list', $top_dream_list);
+$top_article_list = $select->getLastArticles();
+$smarty->assign('top_article_list', $top_article_list);
 
 $main_text = $select->getMainText();
 $smarty->assign('main_text', $main_text);
@@ -29,8 +32,8 @@ $smarty->assign('main_text', $main_text);
 $page_text = $select->getPageText();
 $smarty->assign('text', $page_text);
 
-$dream_text = $select->getDreamText();
-$smarty->assign('dream_text', $dream_text);
+$article_text = $select->getArticleText();
+$smarty->assign('article_text', $article_text);
 
 $results = $select->getResults();
 $smarty->assign('results', $results);
