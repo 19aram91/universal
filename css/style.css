@@ -2,14 +2,14 @@
     height: 105px;
 }
 
-.logo{
-    color: #D1B7E4;
+.logo {
+    color: #FFFFFF;
 }
 
 .logo .logo-head a{
     font-size: 34px;
     font-family: initial;
-    color: #D1B7E4;
+    color: #FFFFFF;
 }
 
 .logo .logo-head a:hover{
@@ -28,8 +28,8 @@
 #search-text{
     width: 50%;
     border-radius: 15px;
-    background-color: rgb(205, 173, 249);
-    border: 3px solid rgb(79, 52, 118);
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
     padding-left: 11px;
     color: rgb(20, 3, 34);
 }
@@ -115,7 +115,7 @@
     min-height: 30px;
     opacity: .9;
     text-align: center;
-    color: #D1B7E4;
+    color: #FFFFFF;
     line-height: 30px;
 }
 
