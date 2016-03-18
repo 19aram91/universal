@@ -27,6 +27,14 @@
             {/if}
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="languages">
+                {foreach $langs as $l}
+                    <a {if isset($smarty.get.id)} href="{$root}/{$l.code}/{$page}/{$smarty.get.id}" {else} href="{$root}/{$l.code}/{$page}" {/if}
+                            >
+                        <img src="{$root}/img/flags/{$l.flag}" title="{$l.name}">
+                    </a>
+                {/foreach}
+            </div>
             <div class="searchbox">
                 <input id="search-text" placeholder="{#search#}..."/>
             </div>
@@ -50,9 +58,9 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="{$root}">{#home#}</a></li>
                         {foreach $page_list as $pl}
-                            <li><a href="{$root}/main/{$pl.header}"> {$pl.header} </a></li>
+                            <li><a href="{$root}/{$lang}/main/{$pl.ID}"> {$pl.header} </a></li>
                         {/foreach}
-                        <li><a href="{$root}/feedback/message"> {#feedback#} </a></li>
+                        <li><a href="{$root}/{$lang}/feedback"> {#feedback#} </a></li>
                     </ul>
                 </div>
 

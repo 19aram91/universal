@@ -12,6 +12,25 @@ class Select
         return $result[0];
     }
 
+    function getLang(){
+        if(isset($_GET['lang']))
+            return $_GET['lang'];
+
+        global $DBH;
+        $STH = $DBH->prepare("SELECT code FROM languages LIMIT 1");
+        $STH->execute()or die(print_r($STH->errorInfo(), true));
+        $result = $STH->fetchAll();
+        return $result[0]['code'];
+    }
+
+    function getLanguages(){
+        global $DBH;
+        $STH = $DBH->prepare("SELECT * FROM languages");
+        $STH->execute()or die(print_r($STH->errorInfo(), true));
+        $result = $STH->fetchAll();
+        return $result;
+    }
+
     function getLastArticles()
     {
         global $DBH;
@@ -24,8 +43,11 @@ class Select
     function getPages()
     {
         global $DBH;
-        $STH = $DBH->prepare("SELECT ID, header FROM pages ORDER BY position");
-        $STH->execute() or die(print_r($STH->errorInfo(), true));
+        global $lang;
+        $STH = $DBH->prepare("SELECT pages.*, pages_dic.header FROM pages
+                              INNER JOIN pages_dic on pages.ID = pages_dic.page_id AND pages_dic.language = ?
+                              ORDER BY pages.position");
+        $STH->execute(array($lang)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
     }
@@ -47,10 +69,12 @@ class Select
             return;
         }
 
-        $header = $_GET['id'];
-        global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM pages where header = ?");
-        $STH->execute(array($header)) or die(print_r($STH->errorInfo(), true));
+        $id = $_GET['id'];
+        global $DBH, $lang;
+        $STH = $DBH->prepare("SELECT pages.*, pages_dic.description FROM pages
+                              INNER JOIN pages_dic on pages.ID = pages_dic.page_id AND pages_dic.language = ?
+                              where pages.ID = ?");
+        $STH->execute(array($lang, $id)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result[0];
     }

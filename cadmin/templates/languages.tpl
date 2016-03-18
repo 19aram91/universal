@@ -11,26 +11,33 @@
             </div>
 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-3">
+                <div>
+                    <form action="index.php?page=languages&action=set" method="post" enctype="multipart/form-data">
+                        <input name="code" maxlength="2" placeholder="language code">
+                        <input name="name" placeholder="language name">
+                        <input name="flag" type="file">
+                        <input type="submit">
+                    </form>
+                </div>
                 <div class="table-responsive">
                     <table class="table table-hover table-striped">
                         <thead>
                         <tr>
-                            <th>Header</th>
-                            <th>Description</th>
-                            <th>Count</th>
-                            <th>Actions</th>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Flag</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {foreach $articles as $a}
+                        {foreach $languages as $l}
                             <tr>
-                                <td>{$a.header}</td>
-                                <td>{$a.description|truncate:50}</td>
-                                <td>{$a.watch_count}</td>
+                                <td>{$l.code}</td>
+                                <td>{$l.name}</td>
+                                <td><img src="../img/flags/{$l.flag}" width="20px"> </td>
                                 <td>
-                                    <a href="?page=article&action=editItem&id={$a.ID}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>
-                                    <a onClick="return confirmDelete()" href="?page=article&action=delete&id={$a.ID}"><i class="fa fa-times fa-lg fa-fw"></i></a>
+                                    <a onClick="return confirmDelete()" href="?page=languages&action=delete&id={$l.id}"><i class="fa fa-times fa-lg fa-fw"></i></a>
                                 </td>
                             </tr>
                         {/foreach}

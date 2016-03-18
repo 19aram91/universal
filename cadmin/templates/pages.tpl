@@ -12,18 +12,22 @@
 
             <div class="col-lg-12 add-page disabled" >
                 <form action="?page=pages&action=set" method="post" enctype="multipart/form-data" role="form">
+                    {foreach $langs as $l}
                     <div class="form-group">
-                        <label>Header </label>
-                        <input class="form-control" name="info_header">
+                        <label>Header {$l.name}</label>
+                        <input class="form-control" name="header_{$l.code}">
                     </div>
+                    {/foreach}
                     <div class="form-group">
                         <label>Position </label>
                         <input type="number" class="form-control" name="info_pos">
                     </div>
+                    {foreach $langs as $l}
                     <div class="form-group">
-                        <label>Description</label>
-                        <textarea class="form-control ckeditor" rows="3" name="info_desc"></textarea>
+                        <label>Description {$l.name}</label>
+                        <textarea class="form-control ckeditor" rows="3" name="desc_{$l.code}"></textarea>
                     </div>
+                    {/foreach}
                     <button type="submit" class="btn btn-default">Add</button>
                 </form>
             </div>
@@ -34,20 +38,23 @@
             <div class="col-lg-12">
                 <a href="?page=pages">Back</a>
                 <form action="?page=pages&action=edit" method="post" role="form">
-                    <div class="form-group">
-                        <label>Header </label>
-                        <input class="form-control" name="info_header" value="{$pageInfo.header}">
-                    </div>
+
                     <div class="form-group">
                         <label>Position </label>
-                        <input type="number" class="form-control" name="info_pos" value="{$pageInfo.position}">
+                        <input type="number" class="form-control" name="info_pos" value="{$pageInfo[0].position}">
                     </div>
+                    {foreach $pageInfo as $pi}
                     <div class="form-group">
-                        <label>Description</label>
-                        <textarea class="form-control ckeditor" rows="3" name="info_desc">{$pageInfo.description}</textarea>
+                        <label>Header {$pi.language} </label>
+                        <input class="form-control" name="header_{$pi.language}" value="{$pi.header}">
                     </div>
 
-                    <input type="hidden" name="id" value="{$pageInfo.ID}"/>
+                    <div class="form-group">
+                        <label>Description {$pi.language}</label>
+                        <textarea class="form-control ckeditor" rows="3" name="desc_{$pi.language}">{$pi.description}</textarea>
+                    </div>
+                    {/foreach}
+                    <input type="hidden" name="id" value="{$pageInfo[0].ID}"/>
                     <button type="submit" class="btn btn-default">Edit</button>
                 </form>
             </div>

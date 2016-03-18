@@ -1,6 +1,8 @@
 <?php
 abstract class Controller{
 
+    protected $langs;
+
     function __construct(){
 
         if(!$this->Auth()){
@@ -10,6 +12,7 @@ abstract class Controller{
         }
 
         $this->getConfigs();
+        $this->getLanguages();
     }
 
     protected function getConfigs(){
@@ -19,6 +22,15 @@ abstract class Controller{
         $result = $STH->fetchAll();
         global $smarty;
         $smarty->assign('configs', $result[0]);
+    }
+
+    protected function getLanguages(){
+        global $DBH;
+        $STH = $DBH->prepare("SELECT * FROM languages");
+        $STH->execute()or die(print_r($STH->errorInfo(), true));
+        $this->langs = $STH->fetchAll();
+        global $smarty;
+        $smarty->assign('langs', $this->langs);
     }
 
     protected function redirect($route) {

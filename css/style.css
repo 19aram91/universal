@@ -20,7 +20,7 @@
     font-size: 17px;
 }
 
-.searchbox{
+.searchbox, .languages{
     padding-top: 11px;
     text-align: right;
 }
@@ -243,4 +243,10 @@
 #googleMap{
     height: 300px;
     width: 100%;
+}
+
+.languages img{
+    width: 25px;
+    height: 18px;
+    margin-right: 3px;
 }

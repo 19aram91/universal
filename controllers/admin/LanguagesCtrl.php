@@ -9,45 +9,38 @@ class LanguagesCtrl extends Controller{
     }
 
     function set(){
-        $header = $_POST['article_header'];
-        $description = $_POST['article_desc'];
+        $code = $_POST['code'];
+        $name = $_POST['name'];
         $rand = uniqid();
-        $img = $_FILES['article_img']['size'] > 0 ? $rand . $_FILES['article_img']['name'] : 'noimg.png';
+        $img = $_FILES['flag']['size'] > 0 ? $rand . $_FILES['flag']['name'] : 'flag.png';
 
-        $data = array($header, $description, $img);
+        $data = array($code, $name, $img);
         global $DBH;
-        $STH = $DBH->prepare("INSERT INTO articles (header, description, img) values (?, ?, ?)");
+        $STH = $DBH->prepare("INSERT INTO languages (code, name, flag) values (?, ?, ?)");
         $STH->execute($data) or die(print_r($STH->errorInfo(), true));
 
-        if ($_FILES['article_img']['size'] > 0) {
-            move_uploaded_file($_FILES['article_img']["tmp_name"], "../img/articles/" . $img);
+        if ($_FILES['flag']['size'] > 0) {
+            move_uploaded_file($_FILES['flag']["tmp_name"], "../img/flags/" . $img);
         }
 
-        $this->redirect('?page=article');
+        $this->redirect('?page=languages');
     }
 
     function get(){
         global $DBH;
         global $smarty;
-        $STH = $DBH->prepare("SELECT * FROM articles ORDER BY ID DESC");
+        $STH = $DBH->prepare("SELECT * FROM languages");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        $smarty->assign('articles', $result);
+        $smarty->assign('languages', $result);
     }
 
     function delete(){
         $id = $_GET['id'];
         global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM articles WHERE ID=$id");
+        $STH = $DBH->prepare("DELETE FROM languages where id = $id");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
-        $result = $STH->fetchAll();
-        if ($result[0]['img'] != 'noimg.png') {
-            $dir = "../img/articles/" . $result[0]['img'];
-            unlink($dir);
-        }
-        $STH = $DBH->prepare("DELETE FROM articles where ID = $id");
-        $STH->execute() or die(print_r($STH->errorInfo(), true));
-        $this->redirect('?page=article');
+        $this->redirect('?page=languages');
     }
 
 }

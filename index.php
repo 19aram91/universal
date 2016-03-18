@@ -11,11 +11,14 @@ $select = new Select();
 
 $smarty->assign('root', $root);
 
-$date = date('d-m-y',strtotime("-1 days"));
-$smarty->assign('date', $date);
-
 $conf = $select->getConfigs();
 $smarty->assign('conf', $conf);
+
+$lang = $select->getlang();
+$smarty->assign('lang', $lang);
+
+$languages = $select->getlanguages();
+$smarty->assign('langs', $languages);
 
 $fb_conf = $select->getFbConfig();
 $smarty->assign('fb_conf', $fb_conf);
