@@ -13,15 +13,28 @@ class MainCtrl extends Controller{
         $STH = $DBH->prepare("SELECT * FROM main");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
+
+        foreach($result as $r){
+            $texts[$r['language']] = $r['description'];
+        }
+
         global $smarty;
-        $smarty->assign('main_text', $result[0]);
+        $smarty->assign('texts', $texts);
     }
 
     function edit(){
-        $description = $_POST['main_text'];
         global $DBH;
-        $STH = $DBH->prepare("UPDATE main SET description=?");
-        $STH->execute(array($description)) or die(print_r($STH->errorInfo(), true));
+        $STH = $DBH->prepare("DELETE FROM main");
+        $STH->execute() or die(print_r($STH->errorInfo(), true));
+
+        foreach($this->langs as $l){
+            $lang = $l['code'];
+            $main = $_POST['main_'.$lang];
+            $data = array($main, $lang);
+
+            $STH = $DBH->prepare("INSERT INTO main(description, language) VALUES(?, ?)");
+            $STH->execute($data) or die(print_r($STH->errorInfo(), true));
+        }
         $this->redirect('index.php?page=main');
     }
 }

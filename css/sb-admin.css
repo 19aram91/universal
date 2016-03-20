@@ -287,3 +287,7 @@ h5{
 .disabled{
     display: none;
 }
+
+form textarea{
+    width: 100% ;
+}

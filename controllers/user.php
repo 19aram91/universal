@@ -56,8 +56,9 @@ class Select
     function getMainText()
     {
         global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM main");
-        $STH->execute() or die(print_r($STH->errorInfo(), true));
+        global $lang;
+        $STH = $DBH->prepare("SELECT * FROM main where language = ?");
+        $STH->execute(array($lang)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
     }
