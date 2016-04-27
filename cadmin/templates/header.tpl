@@ -62,12 +62,13 @@
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
-                <li {if $page=="configs"}class="active" {/if}><a href="?page=configs"><i class="fa fa-fw fa-star"></i> {#conf#}</a></li>
-                <li {if $page=="languages"}class="active" {/if}><a href="?page=languages"><i class="fa fa-fw fa-star"></i> {#languages#}</a></li>
-                <li {if $page=="article"}class="active" {/if}><a href="?page=article"><i class="fa fa-fw fa-star"></i> {#article#}</a></li>
+                <li {if $page=="configs"}class="active" {/if}><a href="?page=configs"><i class="fa fa-fw fa-cogs"></i> {#conf#}</a></li>
+                <li {if $page=="colors"}class="active" {/if}><a href="?page=colors"><i class="fa fa-fw fa-wrench"></i> {#colors#}</a></li>
+                <li {if $page=="languages"}class="active" {/if}><a href="?page=languages"><i class="fa fa-fw fa-globe"></i> {#languages#}</a></li>
                 <li {if $page=="pages"}class="active" {/if}><a href="?page=pages"><i class="fa fa-fw fa-info"></i> {#pages#}</a></li>
-                <li {if $page=="main"}class="active" {/if}><a href="?page=main"><i class="fa fa-fw fa-desktop"></i> {#main#}</a></li>
-                <li {if $page=="fb_conf"}class="active" {/if}><a href="?page=fb_conf"><i class="fa fa-fw fa-desktop"></i> {#feedback#}</a></li>
+                <li {if $page=="main"}class="active" {/if}><a href="?page=main"><i class="fa fa-fw fa-home"></i> {#main#}</a></li>
+                <li {if $page=="article"}class="active" {/if}><a href="?page=article"><i class="fa fa-fw fa-file-text"></i> {#article#}</a></li>
+                <li {if $page=="fb_conf"}class="active" {/if}><a href="?page=fb_conf"><i class="fa fa-fw fa-map-marker"></i> {#contacts#}</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

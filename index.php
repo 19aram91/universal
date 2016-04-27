@@ -11,11 +11,11 @@ $select = new Select();
 
 $smarty->assign('root', $root);
 
-$conf = $select->getConfigs();
-$smarty->assign('conf', $conf);
-
 $lang = $select->getlang();
 $smarty->assign('lang', $lang);
+
+$conf = $select->getConfigs();
+$smarty->assign('conf', $conf);
 
 $languages = $select->getlanguages();
 $smarty->assign('langs', $languages);

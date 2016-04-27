@@ -10,54 +10,35 @@ class ConfigsCtrl extends Controller{
 
     function get(){
         global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM configs");
+        $STH = $DBH->prepare("SELECT configs.*, configs_dic.* FROM configs INNER JOIN configs_dic");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         global $smarty;
-        $smarty->assign('articles', $result[0]);
+        $smarty->assign('conf', $result);
     }
 
     function editConfigs(){
         $show = isset($_POST['slogan_show']) ? 1 : 0;
-        $name = $_POST['site_name'];
-        $slogan = $_POST['slogan_name'];
-        $title = $_POST['site_title'];
-        $keywords = $_POST['keywords'];
-        $description = $_POST['description'];
-
-        $data = array($name, $slogan, $show, $keywords, $description, $title);
         global $DBH;
-        $STH = $DBH->prepare("UPDATE configs SET site_name=?, slogan_name=?, slogan_show=?, keywords=?, description=?, site_title=?");
-        $STH->execute($data) or die(print_r($STH->errorInfo(), true));
+
+        $STH = $DBH->prepare("UPDATE configs SET slogan_show=?");
+        $STH->execute(array($show)) or die(print_r($STH->errorInfo(), true));
+
+        foreach ($this->langs as $l){
+            $lang = $l['code'];
+            $name = $_POST['site_name_'.$lang];
+            $slogan = $_POST['slogan_name_'.$lang];
+            $title = $_POST['site_title_'.$lang];
+            $keywords = $_POST['keywords_'.$lang];
+            $description = $_POST['description_'.$lang];
+            $data = array($name, $slogan, $keywords, $description, $title, $lang);
+            $STH = $DBH->prepare("UPDATE configs_dic SET site_name=?, slogan_name=?, keywords=?, description=?, site_title=? WHERE lang =?");
+            $STH->execute($data) or die(print_r($STH->errorInfo(), true));
+        }
 
         if(isset($_FILES['favicon'])){
             move_uploaded_file($_FILES['favicon']['tmp_name'], "../img/favicon.ico");
         }
-
-        $this->redirect('?page=configs');
-    }
-
-    function editColors(){
-        $bg_color = $_POST['bg_color'];
-        $hf_color = $_POST['hf_color'];
-        $side_color = $_POST['side_color'];
-        $main_color = $_POST['main_color'];
-        $font_color = $_POST['font_color'];
-
-        $data = array($bg_color, $hf_color, $side_color, $main_color, $font_color);
-        global $DBH;
-        $STH = $DBH->prepare("UPDATE configs SET bg_color=?, hf_color=?, side_color=?, main_color=?, font_color=?");
-        $STH->execute($data) or die(print_r($STH->errorInfo(), true));
-
-        $cssFile = fopen("../css/custom.css", "w") or die("Unable to open file!");
-        $style = "body {background-color: $bg_color ;}
-                .header {background-color: $hf_color ;}
-                .footer {background-color: $hf_color ;}
-                .content {background-color: $side_color ; color: $font_color;}
-                .main, .letter-nav {background-color: $main_color ;}";
-
-        fwrite($cssFile, $style);
-        fclose($cssFile);
 
         $this->redirect('?page=configs');
     }

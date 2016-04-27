@@ -6,8 +6,9 @@ class Select
 
     function getConfigs(){
         global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM configs");
-        $STH->execute()or die(print_r($STH->errorInfo(), true));
+        global $lang;
+        $STH = $DBH->prepare("SELECT configs.*, configs_dic.* FROM configs INNER JOIN configs_dic on configs_dic.lang = ?");
+        $STH->execute(array($lang))or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result[0];
     }

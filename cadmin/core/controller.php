@@ -17,7 +17,7 @@ abstract class Controller{
 
     protected function getConfigs(){
         global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM configs");
+        $STH = $DBH->prepare("SELECT configs.*, configs_dic.* FROM configs INNER JOIN configs_dic on configs_dic.lang = 'en'");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         global $smarty;
