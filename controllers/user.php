@@ -107,8 +107,9 @@ class Select
             return;
         }
         global $DBH;
-        $STH = $DBH->prepare("SELECT * FROM fb_config");
-        $STH->execute() or die(print_r($STH->errorInfo(), true));
+        global $lang;
+        $STH = $DBH->prepare("SELECT * FROM fb_config WHERE lang = ?");
+        $STH->execute(array($lang)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result[0];
     }

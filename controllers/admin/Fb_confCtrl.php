@@ -14,18 +14,21 @@ class Fb_confCtrl extends Controller{
         $STH = $DBH->prepare("SELECT * FROM fb_config");
         $STH->execute() or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        $smarty->assign('fb_conf', $result[0]);
+        $smarty->assign('fb_conf', $result);
     }
 
     function edit(){
         $lat = $_POST['lat'];
         $long = $_POST['long'];
-        $contact = $_POST['contact'];
-
-        $data = array($lat, $long, $contact);
         global $DBH;
-        $STH = $DBH->prepare("UPDATE fb_config SET latitude=?, longitude=?, contact=?");
-        $STH->execute($data) or die(print_r($STH->errorInfo(), true));
+
+        foreach ($this->langs as $l){
+            $lang = $l['code'];
+            $contact = $_POST['contact_'.$lang];
+            $data = array($lat, $long, $contact, $lang);
+            $STH = $DBH->prepare("UPDATE fb_config SET latitude=?, longitude=?, contact=? WHERE lang = ?");
+            $STH->execute($data) or die(print_r($STH->errorInfo(), true));
+        }
 
         $this->redirect('?page=fb_conf');
     }
