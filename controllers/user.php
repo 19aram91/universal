@@ -71,7 +71,7 @@ class Select
             return;
         }
 
-        $id = $_GET['id'];
+        $id = $_GET['id']
         global $DBH, $lang;
         $STH = $DBH->prepare("SELECT pages.*, pages_dic.description FROM pages
                               INNER JOIN pages_dic on pages.ID = pages_dic.page_id AND pages_dic.language = ?
