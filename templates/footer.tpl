@@ -1,12 +1,11 @@
 <div class="col-md-3 col-sm-12 advertisement">
-    {#latestNews#}
+    <p> {#latestNews#} </p>
+	<hr/>
     <ul>
         {foreach $top_article_list as $al}
             <li><a href="/article/{$al.header}">{$al.header}</a></li>
         {/foreach}
     </ul>
-    <hr/>
-    {*Advertisement !!!*}
 </div>
 </div>
 <div class="row footer">

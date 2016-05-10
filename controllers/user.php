@@ -29,7 +29,11 @@ class Select
         $STH = $DBH->prepare("SELECT * FROM languages");
         $STH->execute()or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
-        return $result;
+        foreach ($result as $r){
+            $langs[$r['code']] = $r;
+        }
+        //print_r($langs); exit();
+        return $langs;
     }
 
     function getLastArticles()
@@ -71,7 +75,7 @@ class Select
             return;
         }
 
-        $id = $_GET['id']
+        $id = $_GET['id'];
         global $DBH, $lang;
         $STH = $DBH->prepare("SELECT pages.*, pages_dic.description FROM pages
                               INNER JOIN pages_dic on pages.ID = pages_dic.page_id AND pages_dic.language = ?

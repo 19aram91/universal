@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="{$root}/img/favicon.ico" type="image/x-icon"/>
 
     <link href="{$root}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{$root}/css/custom.css" rel="stylesheet">
+    {*<link href="{$root}/css/custom.css" rel="stylesheet">*}
     <link href="{$root}/css/style.css" rel="stylesheet">
 
 </head>
@@ -19,29 +19,44 @@
 
 <div class="container">
     <div class="row header">
-        <div class="col-md-6 col-sm-6 col-xs-12 logo">
+        <div class="col-md-8 col-sm-6 col-xs-12 logo">
             {$slogan_bool = ($conf.slogan_show == 0) ? false : true}
-            <div class="logo-head"><a href="{$root}"> {$conf.site_name} </a></div>
+            <div class="logo-head"><a href="{$root}"><img src="{$root}/img/mechanica.png"></a></div>
             {if $slogan_bool}
                 <div class="logo-slog">{$conf.slogan_name}</div>
             {/if}
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="languages">
-                {foreach $langs as $l}
-                    <a {if isset($smarty.get.id)} href="{$root}/{$l.code}/{$page}/{$smarty.get.id}" {else} href="{$root}/{$l.code}/{$page}" {/if}
-                            >
-                        <img src="{$root}/img/flags/{$l.flag}" title="{$l.name}">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group lang-group ">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <a href="#">
+                        <img src="{$root}/img/flags/{$langs[$lang].flag}" title="{$langs[$lang].name}">
                     </a>
-                {/foreach}
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menus">
+                    {foreach $langs as $l}
+                        {if $l.code != $lang}
+                            <li>
+                                <a {if isset($smarty.get.id)} href="{$root}/{$l.code}/{$page}/{$smarty.get.id}" {else} href="{$root}/{$l.code}/{$page}" {/if}>
+                                    <img src="{$root}/img/flags/{$l.flag}" title="{$l.name}">
+                                </a>
+                            </li>
+                        {/if}
+                    {/foreach}
+                </ul>
             </div>
-            <div class="searchbox">
-                <input id="search-text" placeholder="{#search#}..."/>
-            </div>
+            <form class="input-group">
+                <input type="text" class="form-control" placeholder="{#search#}...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">{#go#}</button>
+                      </span>
+            </form>
         </div>
     </div>
     <div class="row letter-nav" id="alfavit">
-        <nav class="navbar navbar-default">
+        <nav class="navbar ">
             <div class="container-fluid">
 
                 <div class="navbar-header">
@@ -56,11 +71,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{$root}">{#home#}</a></li>
+                        <li {if $page == 'home'} class="active" {/if}><a href="{$root}">{#home#}</a></li>
                         {foreach $page_list as $pl}
-                            <li><a href="{$root}/{$lang}/main/{$pl.ID}"> {$pl.header} </a></li>
+                            <li {if $id == {$pl.ID}} class="active" {/if}><a href="{$root}/{$lang}/main/{$pl.ID}"> {$pl.header} </a></li>
                         {/foreach}
-                        <li><a href="{$root}/{$lang}/feedback"> {#feedback#} </a></li>
+                        <li {if $page == 'feedback'} class="active" {/if}><a href="{$root}/{$lang}/feedback"> {#feedback#} </a></li>
                     </ul>
                 </div>
 
