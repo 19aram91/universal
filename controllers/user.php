@@ -35,8 +35,11 @@ class Select
     function getLastArticles()
     {
         global $DBH;
-        $STH = $DBH->prepare("SELECT ID, header FROM articles ORDER BY ID desc limit 5");
-        $STH->execute() or die(print_r($STH->errorInfo(), true));
+        global $lang;
+        $STH = $DBH->prepare("SELECT articles.*, article_dic.* FROM articles
+                              INNER JOIN article_dic on articles.id = article_dic.article_id AND article_dic.lang = ?
+                              ORDER BY ID desc limit 5");
+        $STH->execute(array($lang)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
     }
@@ -90,11 +93,14 @@ class Select
 
         $id = $_GET['id'];
         $params = array($id);
-        global $DBH;
-        $STH = $DBH->prepare("Update articles set watch_count = watch_count+1 where header = ?");
+        global $DBH, $lang;
+        $STH = $DBH->prepare("Update articles set watch_count = watch_count+1 where created = ?");
         $STH->execute($params) or die(print_r($STH->errorInfo(), true));
 
-        $STH = $DBH->prepare("SELECT * FROM articles where header = ?");
+        $params = array($lang, $id);
+        $STH = $DBH->prepare("SELECT articles.*, article_dic.* FROM articles
+                              INNER JOIN article_dic on articles.id = article_dic.article_id AND article_dic.lang = ?
+                              where articles.created = ?");
         $STH->execute($params) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result[0];

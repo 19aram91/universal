@@ -13,17 +13,19 @@
             <div class="col-lg-12 add-article disabled">
                 <form action="?page=article&action=set" method="post" enctype="multipart/form-data" role="form">
                     <div class="form-group">
-                        <label>Header </label>
-                        <input class="form-control" name="article_header">
-                    </div>
-                    <div class="form-group">
                         <label>IMG</label>
                         <input type="file" name="article_img">
                     </div>
+                    {foreach $langs as $l}
                     <div class="form-group">
-                        <label>Description</label>
-                        <textarea class="form-control ckeditor" rows="3" name="article_desc"></textarea>
+                        <label>Header {$l.name}</label>
+                        <input class="form-control" name="header_{$l.code}">
                     </div>
+                    <div class="form-group">
+                        <label>Description {$l.name}</label>
+                        <textarea class="form-control ckeditor" rows="3" name="desc_{$l.code}"></textarea>
+                    </div>
+                    {/foreach}
                     <button type="submit" class="btn btn-default">Add</button>
                 </form>
             </div>
@@ -35,20 +37,22 @@
                 <a href="?page=article">Back</a>
                 <form action="?page=article&action=edit" method="post" enctype="multipart/form-data" role="form">
                     <div class="form-group">
-                        <label>Header </label>
-                        <input class="form-control" name="article_header" value="{$article.header}">
-                    </div>
-                    <div class="form-group">
-                        <img src="../img/articles/{$article.img}" height="60" width="60">
+                        <img src="../img/articles/{$article[0].img}" height="60" width="60">
                         <label>IMG</label>
                         <input type="file" name="article_img">
                     </div>
+                    {foreach $article as $a}
                     <div class="form-group">
-                        <label>Description</label>
+                        <label>Header {$a.lang}</label>
+                        <input class="form-control" name="header_{$a.lang}" value="{$a.header}">
+                    </div>                    
+                    <div class="form-group">
+                        <label>Description {$a.lang}</label>
                         <textarea class="form-control ckeditor" rows="3"
-                                  name="article_desc">{$article.description}</textarea>
+                                  name="desc_{$a.lang}">{$a.info_text}</textarea>
                     </div>
-                    <input type="hidden" name="id" value="{$article.ID}"/>
+                    {/foreach}
+                    <input type="hidden" name="id" value="{$article[0].id}"/>
                     <button type="submit" class="btn btn-default">Edit</button>
                 </form>
             </div>
@@ -62,7 +66,6 @@
                         <thead>
                         <tr>
                             <th>Header</th>
-                            <th>Description</th>
                             <th>Count</th>
                             <th>Actions</th>
                         </tr>
@@ -71,11 +74,10 @@
                         {foreach $articles as $a}
                             <tr>
                                 <td>{$a.header}</td>
-                                <td>{$a.description|truncate:50}</td>
                                 <td>{$a.watch_count}</td>
                                 <td>
-                                    <a href="?page=article&action=editItem&id={$a.ID}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>
-                                    <a onClick="return confirmDelete()" href="?page=article&action=delete&id={$a.ID}"><i class="fa fa-times fa-lg fa-fw"></i></a>
+                                    <a href="?page=article&action=editItem&id={$a.id}"><i class="fa fa-pencil fa-lg fa-fw"></i></a>
+                                    <a onClick="return confirmDelete()" href="?page=article&action=delete&id={$a.id}"><i class="fa fa-times fa-lg fa-fw"></i></a>
                                 </td>
                             </tr>
                         {/foreach}

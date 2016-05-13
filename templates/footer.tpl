@@ -2,7 +2,7 @@
     {#latestNews#}
     <ul>
         {foreach $top_article_list as $al}
-            <li><a href="/article/{$al.header}">{$al.header}</a></li>
+            <li><a href="{$root}/{$lang}/article/{$al.created}">{$al.header}</a></li>
         {/foreach}
     </ul>
     <hr/>
