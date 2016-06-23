@@ -38,7 +38,7 @@ class Select
         global $lang;
         $STH = $DBH->prepare("SELECT articles.*, article_dic.* FROM articles
                               INNER JOIN article_dic on articles.id = article_dic.article_id AND article_dic.lang = ?
-                              ORDER BY ID desc limit 5");
+                              ORDER BY articles.id desc limit 5");
         $STH->execute(array($lang)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result;
