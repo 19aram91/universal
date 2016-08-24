@@ -67,29 +67,27 @@
         </nav>
     </div>
 
+    {if $slider|count>0}
     <div class="row carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                {*<li data-target="#carousel-example-generic" data-slide-to="2"></li>*}
+                {for $i=1 to $slider|count-1}
+                    <li data-target="#carousel-example-generic" data-slide-to="{$i}"></li>
+                {/for}
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="{$root}/img/articles/1.png" alt="...">
-                    <div class="carousel-caption">
-                        carousel 1
+                {foreach $slider as $sl name = slide}
+                    <div class="item {if $smarty.foreach.slide.index == 0} active {/if}">
+                        <img src="{$root}/img/slider/{$sl.img}" alt="...">
+                        <div class="carousel-caption">
+                            {$sl.description}
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <img src="{$root}/img/articles/2.png" alt="...">
-                    <div class="carousel-caption">
-                        carousel 1
-                    </div>
-                </div>
+                {/foreach}
             </div>
 
             <!-- Controls -->
@@ -103,5 +101,6 @@
             </a>
         </div>
     </div>
+    {/if}
 
     <div class="row content">

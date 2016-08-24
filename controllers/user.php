@@ -44,6 +44,17 @@ class Select
         return $result;
     }
 
+    function getSlides()
+    {
+        global $DBH;
+        global $lang;
+        $STH = $DBH->prepare("SELECT slider.*, slider_dic.* FROM slider
+                              INNER JOIN slider_dic on slider.id = slider_dic.slide_id AND slider_dic.lang = ?");
+        $STH->execute(array($lang)) or die(print_r($STH->errorInfo(), true));
+        $result = $STH->fetchAll();
+        return $result;
+    }
+
     function getPages()
     {
         global $DBH;

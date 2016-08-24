@@ -29,6 +29,9 @@ $smarty->assign('page_list', $page_list);
 $top_article_list = $select->getLastArticles();
 $smarty->assign('top_article_list', $top_article_list);
 
+$slider = $select->getSlides();
+$smarty->assign('slider', $slider);
+
 $main_text = $select->getMainText();
 $smarty->assign('main_text', $main_text);
 

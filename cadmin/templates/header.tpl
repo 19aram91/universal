@@ -64,6 +64,7 @@
             <ul class="nav navbar-nav side-nav">
                 <li {if $page=="configs"}class="active" {/if}><a href="?page=configs"><i class="fa fa-fw fa-cogs"></i> {#conf#}</a></li>
                 <li {if $page=="colors"}class="active" {/if}><a href="?page=colors"><i class="fa fa-fw fa-wrench"></i> {#colors#}</a></li>
+                <li {if $page=="slider"}class="active" {/if}><a href="?page=slider"><i class="fa fa-fw fa-sliders"></i> {#slider#}</a></li>
                 <li {if $page=="languages"}class="active" {/if}><a href="?page=languages"><i class="fa fa-fw fa-globe"></i> {#languages#}</a></li>
                 <li {if $page=="pages"}class="active" {/if}><a href="?page=pages"><i class="fa fa-fw fa-info"></i> {#pages#}</a></li>
                 <li {if $page=="main"}class="active" {/if}><a href="?page=main"><i class="fa fa-fw fa-home"></i> {#main#}</a></li>
