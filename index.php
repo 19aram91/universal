@@ -3,7 +3,7 @@ session_start();
 require('libs/Smarty.class.php');
 require('controllers/user.php');
 
-//test
+//testsdf sd sd
 
 date_default_timezone_set('Etc/GMT-4');
 $root = 'http://'.$_SERVER['HTTP_HOST'];
