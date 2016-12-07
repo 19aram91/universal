@@ -4,6 +4,7 @@ require('libs/Smarty.class.php');
 require('controllers/user.php');
 
 //testsdf sd sd
+//molodec
 
 date_default_timezone_set('Etc/GMT-4');
 $root = 'http://'.$_SERVER['HTTP_HOST'];
