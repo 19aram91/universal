@@ -6,7 +6,7 @@ class PagesCtrl extends Controller{
         parent::__construct();
         $this->get();
     }
-
+    //aaaaaaaaaaa
     function set(){
         $position = $_POST['info_pos'];
         $data = array($position);
