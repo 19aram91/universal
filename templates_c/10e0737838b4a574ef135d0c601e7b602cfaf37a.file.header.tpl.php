@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2016-12-07 16:34:11
+<?php /* Smarty version Smarty-3.1.15, created on 2017-01-30 16:51:50
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4092584801c3f11dd4-06365274%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1481113937,
+      1 => 1485780708,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_584801c4037b91_93522776',
   'variables' => 
   array (
     'conf' => 0,
@@ -24,16 +26,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'l' => 0,
     'page' => 0,
     'page_list' => 0,
-    'id' => 0,
     'pl' => 0,
+    'id' => 0,
+    'pm' => 0,
     'lang' => 0,
     'slider' => 0,
     'i' => 0,
     'sl' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_584801c4037b91_93522776',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_584801c4037b91_93522776')) {function content_584801c4037b91_93522776($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="ru">
@@ -125,12 +126,30 @@ $_smarty_tpl->tpl_vars['l']->_loop = true;
 foreach ($_from as $_smarty_tpl->tpl_vars['pl']->key => $_smarty_tpl->tpl_vars['pl']->value) {
 $_smarty_tpl->tpl_vars['pl']->_loop = true;
 ?>
-                            <li <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['pl']->value['ID'];?>
-<?php $_tmp1=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['id']->value==$_tmp1) {?> class="active" <?php }?>><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
+                            <?php if ($_smarty_tpl->tpl_vars['pl']->value['parent_id']==0) {?>
+                                <li <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['pl']->value['ID'];?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['id']->value==$_tmp1) {?> class="active" <?php }?>>
+                                    <a href="#"><?php echo $_smarty_tpl->tpl_vars['pl']->value['header'];?>
+</a>
+                                    <div class="menu_hover">
+                                        <ul>
+                                            <?php  $_smarty_tpl->tpl_vars['pm'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pm']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['page_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['pm']->key => $_smarty_tpl->tpl_vars['pm']->value) {
+$_smarty_tpl->tpl_vars['pm']->_loop = true;
+?>
+                                                <?php if ($_smarty_tpl->tpl_vars['pl']->value['page_id']==$_smarty_tpl->tpl_vars['pm']->value['ID']&&$_smarty_tpl->tpl_vars['pm']->value['parent_id']!='0') {?>
+                                                    <li><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /<?php echo $_smarty_tpl->tpl_vars['lang']->value;?>
-/main/<?php echo $_smarty_tpl->tpl_vars['pl']->value['ID'];?>
-"> <?php echo $_smarty_tpl->tpl_vars['pl']->value['header'];?>
- </a></li>
+/main/<?php echo $_smarty_tpl->tpl_vars['pm']->value['parent_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['pm']->value['header'];?>
+</a></li>
+                                                <?php }?>
+                                            <?php } ?>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <?php }?>
                         <?php } ?>
                         <li <?php if ($_smarty_tpl->tpl_vars['page']->value=='feedback') {?> class="active" <?php }?>><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
 /<?php echo $_smarty_tpl->tpl_vars['lang']->value;?>

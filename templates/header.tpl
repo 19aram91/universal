@@ -57,7 +57,20 @@
                     <ul class="nav navbar-nav">
                         <li {if $page == 'home' || $page == 'article'} class="active" {/if}><a href="{$root}">{#home#}</a></li>
                         {foreach $page_list as $pl}
-                            <li {if $id == {$pl.ID}} class="active" {/if}><a href="{$root}/{$lang}/main/{$pl.ID}"> {$pl.header} </a></li>
+                            {if $pl.parent_id == 0}
+                                <li {if $id == {$pl.ID}} class="active" {/if}>
+                                    <a href="#">{$pl.header}</a>
+                                    <div class="menu_hover">
+                                        <ul>
+                                            {foreach $page_list as $pm}
+                                                {if $pl.page_id == $pm.ID && $pm.parent_id != '0'}
+                                                    <li><a href="{$root}/{$lang}/main/{$pm.parent_id}">{$pm.header}</a></li>
+                                                {/if}
+                                            {/foreach}
+                                        </ul>
+                                    </div>
+                                </li>
+                            {/if}
                         {/foreach}
                         <li {if $page == 'feedback'} class="active" {/if}><a href="{$root}/{$lang}/feedback"> {#feedback#} </a></li>
                     </ul>

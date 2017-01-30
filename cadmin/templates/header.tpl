@@ -67,6 +67,7 @@
                 <li {if $page=="slider"}class="active" {/if}><a href="?page=slider"><i class="fa fa-fw fa-sliders"></i> {#slider#}</a></li>
                 <li {if $page=="languages"}class="active" {/if}><a href="?page=languages"><i class="fa fa-fw fa-globe"></i> {#languages#}</a></li>
                 <li {if $page=="pages"}class="active" {/if}><a href="?page=pages"><i class="fa fa-fw fa-info"></i> {#pages#}</a></li>
+                <li {if $page=="pages_menu"}class="active" {/if}><a href="?page=pages_menu"><i class="fa fa-fw fa-info"></i> {#pagesmenu#}</a></li>
                 <li {if $page=="main"}class="active" {/if}><a href="?page=main"><i class="fa fa-fw fa-home"></i> {#main#}</a></li>
                 <li {if $page=="article"}class="active" {/if}><a href="?page=article"><i class="fa fa-fw fa-file-text"></i> {#article#}</a></li>
                 <li {if $page=="fb_conf"}class="active" {/if}><a href="?page=fb_conf"><i class="fa fa-fw fa-map-marker"></i> {#contacts#}</a></li>

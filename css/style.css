@@ -235,6 +235,22 @@ body, p, a{
     border: none !important;
 }
 
+.menu_hover ul{
+    list-style-type: none;
+}
+
+.menu_hover{
+    padding-left: -60px;
+    position: absolute;
+    display: none;
+    margin-left: -40px;
+    z-index: 1;
+}
+
+.navbar-nav :hover .menu_hover{
+    display: block;
+}
+
 .navbar {
     min-height: 0px;
     margin-bottom: 0px;

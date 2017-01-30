@@ -59,7 +59,7 @@ class Select
     {
         global $DBH;
         global $lang;
-        $STH = $DBH->prepare("SELECT pages.*, pages_dic.header FROM pages
+        $STH = $DBH->prepare("SELECT pages.*, pages_dic.* FROM pages
                               INNER JOIN pages_dic on pages.ID = pages_dic.page_id AND pages_dic.language = ?
                               ORDER BY pages.position");
         $STH->execute(array($lang)) or die(print_r($STH->errorInfo(), true));
@@ -87,10 +87,10 @@ class Select
 
         $id = $_GET['id'];
         global $DBH, $lang;
-        $STH = $DBH->prepare("SELECT pages.*, pages_dic.description FROM pages
+        $STH = $DBH->prepare("SELECT pages.*, pages_dic.* FROM pages
                               INNER JOIN pages_dic on pages.ID = pages_dic.page_id AND pages_dic.language = ?
-                              where pages.ID = ?");
-        $STH->execute(array($lang, $id)) or die(print_r($STH->errorInfo(), true));
+                              where pages_dic.parent_id = ? OR pages_dic.page_id = ?");
+        $STH->execute(array($lang, $id, $id)) or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
         return $result[0];
     }

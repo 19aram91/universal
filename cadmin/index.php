@@ -9,5 +9,7 @@ require_once('core/route.php');
 
 $smarty = new Smarty();
 $universal = new App();
+$action = (!isset($_POST['action'])) ? "" : $_POST['action'];
+
 
 $smarty->display('templates/index.tpl');

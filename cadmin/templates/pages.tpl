@@ -44,15 +44,12 @@
                         <input type="number" class="form-control" name="info_pos" value="{$pageInfo[0].position}">
                     </div>
                     {foreach $pageInfo as $pi}
-                    <div class="form-group">
-                        <label>Header {$pi.language} </label>
-                        <input class="form-control" name="header_{$pi.language}" value="{$pi.header}">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Description {$pi.language}</label>
-                        <textarea class="form-control ckeditor" rows="3" name="desc_{$pi.language}">{$pi.description}</textarea>
-                    </div>
+                        {if $pi.parent_id == '0'}
+                            <div class="form-group">
+                                <label>Header {$pi.language} </label>
+                                <input class="form-control" name="header_{$pi.language}" value="{$pi.header}">
+                            </div>
+                        {/if}
                     {/foreach}
                     <input type="hidden" name="id" value="{$pageInfo[0].ID}"/>
                     <button type="submit" class="btn btn-default">Edit</button>
