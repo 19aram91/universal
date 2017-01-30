@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-01-30 16:56:30
+<?php /* Smarty version Smarty-3.1.15, created on 2017-01-30 17:37:08
          compiled from "C:\xampp\htdocs\universal\cadmin\templates\pages.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:18186584960557c4d22-56182923%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '948580d19acad33c96c0d4c590a14355498b9fc8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\universal\\cadmin\\templates\\pages.tpl',
-      1 => 1485780989,
+      1 => 1485783405,
       2 => 'file',
     ),
   ),
@@ -99,6 +99,14 @@ $_smarty_tpl->tpl_vars['pi']->_loop = true;
                                 <input class="form-control" name="header_<?php echo $_smarty_tpl->tpl_vars['pi']->value['language'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['pi']->value['header'];?>
 ">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Description <?php echo $_smarty_tpl->tpl_vars['pi']->value['language'];?>
+</label>
+                                <textarea class="form-control ckeditor" rows="3" name="desc_<?php echo $_smarty_tpl->tpl_vars['pi']->value['language'];?>
+"><?php echo $_smarty_tpl->tpl_vars['pi']->value['description'];?>
+</textarea>
                             </div>
                         <?php }?>
                     <?php } ?>

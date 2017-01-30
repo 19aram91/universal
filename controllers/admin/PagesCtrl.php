@@ -6,6 +6,7 @@ class PagesCtrl extends Controller{
         parent::__construct();
         $this->get();
     }
+
     function set(){
         $position = $_POST['info_pos'];
         $data = array($position);
@@ -24,6 +25,7 @@ class PagesCtrl extends Controller{
             $STH = $DBH->prepare("INSERT INTO pages_dic (page_id, language, header, description) values (?,?,?,?)");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
         }
+
         $this->redirect('index.php?page=pages');
     }
 
@@ -62,11 +64,13 @@ class PagesCtrl extends Controller{
         foreach ($this->langs as $l){
             $lang = $l['code'];
             $header = $_POST['header_'.$lang];
-            $data = array($header, $id, $lang);
+            $desc = $_POST['desc_'.$lang];
+            $data = array($header, $desc, $id, $lang);
 
-            $STH = $DBH->prepare("UPDATE pages_dic SET header = ? where page_id = ? AND language = ? AND parent_id = '0'");
+            $STH = $DBH->prepare("UPDATE pages_dic SET header = ?, description=? WHERE page_id = ? AND language = ? AND parent_id = '0'");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
         }
+
         $this->redirect('?page=pages');
     }
 

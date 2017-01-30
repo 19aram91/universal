@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-01-30 16:51:50
+<?php /* Smarty version Smarty-3.1.15, created on 2017-01-30 19:20:24
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4092584801c3f11dd4-06365274%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1485780708,
+      1 => 1485789622,
       2 => 'file',
     ),
   ),
@@ -28,8 +28,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'page_list' => 0,
     'pl' => 0,
     'id' => 0,
-    'pm' => 0,
     'lang' => 0,
+    'pm' => 0,
     'slider' => 0,
     'i' => 0,
     'sl' => 0,
@@ -129,7 +129,10 @@ $_smarty_tpl->tpl_vars['pl']->_loop = true;
                             <?php if ($_smarty_tpl->tpl_vars['pl']->value['parent_id']==0) {?>
                                 <li <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['pl']->value['ID'];?>
 <?php $_tmp1=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['id']->value==$_tmp1) {?> class="active" <?php }?>>
-                                    <a href="#"><?php echo $_smarty_tpl->tpl_vars['pl']->value['header'];?>
+                                    <a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
+/<?php echo $_smarty_tpl->tpl_vars['lang']->value;?>
+/main/<?php echo $_smarty_tpl->tpl_vars['pl']->value['ID'];?>
+"><?php echo $_smarty_tpl->tpl_vars['pl']->value['header'];?>
 </a>
                                     <div class="menu_hover">
                                         <ul>

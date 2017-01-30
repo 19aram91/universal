@@ -59,7 +59,7 @@
                         {foreach $page_list as $pl}
                             {if $pl.parent_id == 0}
                                 <li {if $id == {$pl.ID}} class="active" {/if}>
-                                    <a href="#">{$pl.header}</a>
+                                    <a href="{$root}/{$lang}/main/{$pl.ID}">{$pl.header}</a>
                                     <div class="menu_hover">
                                         <ul>
                                             {foreach $page_list as $pm}

@@ -49,6 +49,11 @@
                                 <label>Header {$pi.language} </label>
                                 <input class="form-control" name="header_{$pi.language}" value="{$pi.header}">
                             </div>
+
+                            <div class="form-group">
+                                <label>Description {$pi.language}</label>
+                                <textarea class="form-control ckeditor" rows="3" name="desc_{$pi.language}">{$pi.description}</textarea>
+                            </div>
                         {/if}
                     {/foreach}
                     <input type="hidden" name="id" value="{$pageInfo[0].ID}"/>
