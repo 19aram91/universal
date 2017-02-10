@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-01-30 19:20:24
+<?php /* Smarty version Smarty-3.1.15, created on 2017-02-07 16:44:07
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4092584801c3f11dd4-06365274%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1485789622,
+      1 => 1486471444,
       2 => 'file',
     ),
   ),
@@ -99,6 +99,7 @@ $_smarty_tpl->tpl_vars['l']->_loop = true;
             <div class="searchbox">
                 <input id="search-text" placeholder="<?php echo $_smarty_tpl->getConfigVariable('search');?>
 ..."/>
+                <br/>
             </div>
         </div>
     </div>

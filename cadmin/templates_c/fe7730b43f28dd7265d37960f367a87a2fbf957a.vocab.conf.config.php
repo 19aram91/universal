@@ -7,7 +7,7 @@
       array (
         'article' => 'Articles',
         'pages' => 'Pages',
-        'pagesmenu' => 'Pages Menu',
+        'pagesmenu' => 'Menu Pages',
         'conf' => 'Configurations',
         'main' => 'Home Page',
         'files' => 'Files',

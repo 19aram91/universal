@@ -17,11 +17,9 @@ class Pages_menuCtrl extends Controller{
             $header = $_POST['header_'.$lang];
             $desc = $_POST['desc_'.$lang];
             $data = array($page_parent_id[0], $lang, $header, $desc, $parent);
-
             $STH = $DBH->prepare("INSERT INTO pages_dic (page_id, language, header, description, parent_id) values (?,?,?,?,?)");
             $STH->execute($data) or die(print_r($STH->errorInfo(), true));
         }
-
         $this->redirect('index.php?page=pages_menu');
     }
 

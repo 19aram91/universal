@@ -36,6 +36,7 @@
             </div>
             <div class="searchbox">
                 <input id="search-text" placeholder="{#search#}..."/>
+                <br/>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2016-12-07 16:34:12
+<?php /* Smarty version Smarty-3.1.15, created on 2017-01-31 19:03:31
          compiled from ".\templates\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:15578584801c4059278-54187220%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1be7ff7fdee636597edd726ee98dfef4bfd55d1f' => 
     array (
       0 => '.\\templates\\footer.tpl',
-      1 => 1481113937,
+      1 => 1485875009,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_584801c4079028_07868275',
   'variables' => 
   array (
     'top_article_list' => 0,
@@ -24,8 +26,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'conf' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_584801c4079028_07868275',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_584801c4079028_07868275')) {function content_584801c4079028_07868275($_smarty_tpl) {?><div class="col-md-3 col-sm-12 advertisement">
     <?php echo $_smarty_tpl->getConfigVariable('latestNews');?>
