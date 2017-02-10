@@ -21,7 +21,16 @@
     <div class="row header">
         <div class="col-md-6 col-sm-6 col-xs-12 logo">
             {$slogan_bool = ($conf.slogan_show == 0) ? false : true}
-            <div class="logo-head"><a href="{$root}"> {$conf.site_name} </a></div>
+            {$slogan_bool_logo = ($confLogo[1].slogan_show == 0) ? false : true}
+            <div class="logo-head">
+                <a href="{$root}">
+                    {if $slogan_bool_logo}
+                        <img src="../img/logo/logo.png" style="height: 50px;width: 50px;"/>
+                    {/if}
+                    {$conf.site_name}
+                </a>
+            </div>
+
             {if $slogan_bool}
                 <div class="logo-slog">{$conf.slogan_name}</div>
             {/if}

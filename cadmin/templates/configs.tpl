@@ -50,6 +50,24 @@
                         <img src="../img/favicon.ico"/>
                         <input type="file" name="favicon">
                     </div>
+
+
+                    <div class="form-group">
+                        {$slogan_bool_logo = ($conf[1].slogan_show == 0) ? false : true}
+                        <label>Logo Img</label>
+
+                        <div class="cutom-cb">
+                            <input type="checkbox" value="1" id="slideThreeLogo"
+                                   name="slogan_show_logo" {if $slogan_bool_logo} checked {/if}/>
+                            <label for="slideThreeLogo"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Logo </label>
+                        <img src="../img/logo/logo.png" style="height: 50px;width: 50px;"/>
+                        <input type="file" name="logo">
+                    </div>
+
                     <button type="submit" class="btn btn-default">Save</button>
                 </form>
             </div>

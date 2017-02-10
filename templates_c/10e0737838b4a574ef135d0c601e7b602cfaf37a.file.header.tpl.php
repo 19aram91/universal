@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-02-07 16:44:07
+<?php /* Smarty version Smarty-3.1.15, created on 2017-02-10 16:59:14
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4092584801c3f11dd4-06365274%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1486471444,
+      1 => 1486731553,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'conf' => 0,
     'root' => 0,
+    'confLogo' => 0,
+    'slogan_bool_logo' => 0,
     'slogan_bool' => 0,
     'langs' => 0,
     'l' => 0,
@@ -66,9 +68,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="row header">
         <div class="col-md-6 col-sm-6 col-xs-12 logo">
             <?php $_smarty_tpl->tpl_vars['slogan_bool'] = new Smarty_variable($_smarty_tpl->tpl_vars['conf']->value['slogan_show']==0 ? false : true, null, 0);?>
-            <div class="logo-head"><a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
-"> <?php echo $_smarty_tpl->tpl_vars['conf']->value['site_name'];?>
- </a></div>
+            <?php $_smarty_tpl->tpl_vars['slogan_bool_logo'] = new Smarty_variable($_smarty_tpl->tpl_vars['confLogo']->value[1]['slogan_show']==0 ? false : true, null, 0);?>
+            <div class="logo-head">
+                <a href="<?php echo $_smarty_tpl->tpl_vars['root']->value;?>
+">
+                    <?php if ($_smarty_tpl->tpl_vars['slogan_bool_logo']->value) {?>
+                        <img src="../img/logo/logo.png" style="height: 50px;width: 50px;"/>
+                    <?php }?>
+                    <?php echo $_smarty_tpl->tpl_vars['conf']->value['site_name'];?>
+
+                </a>
+            </div>
+
             <?php if ($_smarty_tpl->tpl_vars['slogan_bool']->value) {?>
                 <div class="logo-slog"><?php echo $_smarty_tpl->tpl_vars['conf']->value['slogan_name'];?>
 </div>

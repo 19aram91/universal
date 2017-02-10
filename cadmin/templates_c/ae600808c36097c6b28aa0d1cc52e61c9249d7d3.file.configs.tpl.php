@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2016-12-08 17:27:11
+<?php /* Smarty version Smarty-3.1.15, created on 2017-02-10 15:05:53
          compiled from "C:\xampp\htdocs\universal\cadmin\templates\configs.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2724358495fafdfbb79-83512499%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae600808c36097c6b28aa0d1cc52e61c9249d7d3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\universal\\cadmin\\templates\\configs.tpl',
-      1 => 1481113929,
+      1 => 1486724752,
       2 => 'file',
     ),
   ),
@@ -15,15 +15,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_58495fafec9676_01063673',
   'variables' => 
   array (
     'conf' => 0,
     'c' => 0,
     'slogan_bool' => 0,
+    'slogan_bool_logo' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_58495fafec9676_01063673',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58495fafec9676_01063673')) {function content_58495fafec9676_01063673($_smarty_tpl) {?><div id="page-wrapper">
 
@@ -96,6 +97,24 @@ $_smarty_tpl->tpl_vars['c']->_loop = true;
                         <img src="../img/favicon.ico"/>
                         <input type="file" name="favicon">
                     </div>
+
+
+                    <div class="form-group">
+                        <?php $_smarty_tpl->tpl_vars['slogan_bool_logo'] = new Smarty_variable($_smarty_tpl->tpl_vars['conf']->value[1]['slogan_show']==0 ? false : true, null, 0);?>
+                        <label>Logo Img</label>
+
+                        <div class="cutom-cb">
+                            <input type="checkbox" value="1" id="slideThreeLogo"
+                                   name="slogan_show_logo" <?php if ($_smarty_tpl->tpl_vars['slogan_bool_logo']->value) {?> checked <?php }?>/>
+                            <label for="slideThreeLogo"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Logo </label>
+                        <img src="../img/logo/logo.png" style="height: 50px;width: 50px;"/>
+                        <input type="file" name="logo">
+                    </div>
+
                     <button type="submit" class="btn btn-default">Save</button>
                 </form>
             </div>

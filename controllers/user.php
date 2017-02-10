@@ -7,9 +7,11 @@ class Select
     function getConfigs(){
         global $DBH;
         global $lang;
+        global $smarty;
         $STH = $DBH->prepare("SELECT configs.*, configs_dic.* FROM configs INNER JOIN configs_dic on configs_dic.lang = ?");
         $STH->execute(array($lang))or die(print_r($STH->errorInfo(), true));
         $result = $STH->fetchAll();
+        $smarty->assign('confLogo', $result);
         return $result[0];
     }
 

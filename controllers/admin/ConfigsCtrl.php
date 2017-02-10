@@ -19,10 +19,14 @@ class ConfigsCtrl extends Controller{
 
     function editConfigs(){
         $show = isset($_POST['slogan_show']) ? 1 : 0;
+        $showLogo = isset($_POST['slogan_show_logo']) ? 1 : 0;
         global $DBH;
 
-        $STH = $DBH->prepare("UPDATE configs SET slogan_show=?");
+        $STH = $DBH->prepare("UPDATE configs SET slogan_show=? WHERE id='1'");
         $STH->execute(array($show)) or die(print_r($STH->errorInfo(), true));
+
+        $STH = $DBH->prepare("UPDATE configs SET slogan_show=? WHERE id='2'");
+        $STH->execute(array($showLogo)) or die(print_r($STH->errorInfo(), true));
 
         foreach ($this->langs as $l){
             $lang = $l['code'];
@@ -38,6 +42,11 @@ class ConfigsCtrl extends Controller{
 
         if(isset($_FILES['favicon'])){
             move_uploaded_file($_FILES['favicon']['tmp_name'], "../img/favicon.ico");
+        }
+
+        if(isset($_FILES['logo'])){
+            $format = pathinfo($_FILES['logo']['name'], PATHINFO_EXTENSION);
+            move_uploaded_file($_FILES['logo']['tmp_name'], "../img/logo/logo.".$format);
         }
 
         $this->redirect('?page=configs');
